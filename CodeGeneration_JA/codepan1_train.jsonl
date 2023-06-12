@@ -1,0 +1,1516 @@
+{"in":"配列の重複コンビネーションを繰り返したい","out":"for x, y in itertools.combinations_with_replacement(_配列_, 2):\n    print(x, y)"}
+{"in":"行列の逆行列を知りたい","out":"np.linalg.inv(_行列_)"}
+{"in":"まとめてデータフレームのカラム名を文字列置換したい","out":"_データフレーム_.columns = [str(x).replace(s, s2) for x in _データフレーム_.columns]"}
+{"in":"バイアスなしの回帰モデルを作りたい","out":"model = sklearn.linear_model.LinearRegression(fit_intercept=False)"}
+{"in":"列名と列名を右結合したい","out":"pd.merge(_データフレーム_, _データフレーム_, left_on=_列名_, right_on=_列名_, how='right')"}
+{"in":"文字列が列名の接尾辞である行データを取り出したい","out":"_データフレーム_[_データフレーム_[_列名_].str.endswith(_文字列_)]"}
+{"in":"符号なしで整数をバイト列化したい","out":"_整数_.to_bytes(length=バイト数, byteorder='big')"}
+{"in":"ヒストグラムベースの勾配ブースティング回帰木を新規作成したい","out":"model = sklearn.ensemble.HistGradientBoostingRegressor()\nmodel.fit(説明変数, 目的変数)"}
+{"in":"行列の合計値を算出したい","out":"np.sum(_配列_)"}
+{"in":"結果を表示したい","out":"print(_結果_)"}
+{"in":"余弦がほしい","out":"math.cos(_結果_)  # 単位はラジアン"}
+{"in":"整数の無限の数列が欲しい","out":"itertools.repeat(_整数_)"}
+{"in":"<option>萌黄色を用いたい","out":"color = \"#a9d159\""}
+{"in":"ロッソ回帰モデルを作成したい","out":"model = sklearn.linear_model.Rosso(alpha=0.1)  # alphaは正則化項"}
+{"in":"<option>茄子紺色を使用したい","out":"color = #451F49"}
+{"in":"二つのリストをひとつの箱髭図にしたい","out":"plt.boxplot([_リスト_, _リスト_], labels=['(解説)', '(解説2)'])"}
+{"in":"xの小数点以下結果桁までを表示したい","out":"_結果_ = ':.3f'\nprint(_結果_.format(x))"}
+{"in":"列名と列名を左ジョインしたい","out":"pd.merge(_データフレーム_, _データフレーム_, left_on=_列名_, right_on=_列名_, how='left')"}
+{"in":"option: 文字列を区切りで使用したい","out":"sep = _文字列_"}
+{"in":"列名と配列を散布図に図示したい","out":"plt.scatter(_データ列_, _配列_)"}
+{"in":"データフレームの最後整数行を取り出したい","out":"_データフレーム_.tail(_整数_)  # 行数"}
+{"in":"双方向キューの順番を逆にしたい","out":"reversed(_両端キュー_)"}
+{"in":"<option>マーカーはマゼンタ色","out":"markerfacecolor = \"magenta\""}
+{"in":"タプルのn番目以降の部分を抽出したい","out":"_タプル_[n_:]"}
+{"in":"ふたつの整数の和を計算したい","out":"_整数_ + _数値2_"}
+{"in":"モジュールを検索したいパスをリストに変換したい","out":"sys.path"}
+{"in":"データフレームを使いたい","out":"import numpy as np\nimport pandas as pd"}
+{"in":"１文字アルファベットからランダムに選びたい","out":"random.choice(string.ascii_uppercase)"}
+{"in":"整数の仮数がしりたい","out":"math.frexp(_整数_)[0]"}
+{"in":"<option>チョコレート色を使いたい","out":"color = 'chocolate'"}
+{"in":"文字列と文字列を大文字小文字を無視して比較したい","out":"_文字列_.casefold() < _文字列_.casefold()"}
+{"in":"y座標の最大値を変更したい","out":"plt.ylim(最小値, 最大値)"}
+{"in":"変数を整数で割った余りにしたい","out":"変数 %= _整数_"}
+{"in":"複数の文字列を改行なしに出力したい","out":"print(_文字列_, _文字列_, end='')"}
+{"in":"<option>オーキッド色を用いたい","out":"color = 'orchid'"}
+{"in":"データフレームの最後のカラム以外を説明変数にしたい","out":"説明変数 = _データフレーム_[_データフレーム_.columns[:-1]]"}
+{"in":"回帰分析をパーセプトロンでしたい","out":"model = sklearn.neural_network.MLPRegressor(hidden_layer_sizes=(10, 10))\nmodel.fit(説明変数, 目的変数)"}
+{"in":"文字列を文字列で区切ってリストに変換したい","out":"_文字列_.split(_文字列_)"}
+{"in":"シアン色で横棒グラフを描画したい","out":"plt.barh(_データ列_, _データ列_, color=\"cyan\")"}
+{"in":"結果のクラスが計算したい","out":"type(_結果_)"}
+{"in":"プラットフォームの符号付き整数の最大値が欲しい","out":"sys.maxsize"}
+{"in":"紫色化したい","out":"f'\\033[35m{_整数_}\\033[0m'"}
+{"in":"文字列を文字で二分したい","out":"_文字列_.partition(_文字_)"}
+{"in":"データフレームのふたつのカラムをドロップしてみたい","out":"_データフレーム_.drop([_列名_, _列名_], axis=1)"}
+{"in":"リストを回数してカウンタから減らしたい","out":"_カウンタ_.subtract(_リスト_)"}
+{"in":"相関係数を計算したい","out":"scipy.stats.pearsonr(_リスト_, _リスト_)"}
+{"in":"文字列が全て英数字か知りたい","out":"_文字列_.isalnum()"}
+{"in":"<option>マーカーの色は黄緑","out":"markerfacecolor = 'yellowgreen'"}
+{"in":"結果の指数を求めたい","out":"math.frexp(_結果_)[1]"}
+{"in":"配列の偏差値を求める","out":"50 + 10 * scipy.stats.zscore(_配列_)"}
+{"in":"グリッドの線スタイルを実線に変更したい","out":"plt.grid(linestyle=\"solid\")"}
+{"in":"サポートベクター分類モデルを用意したい","out":"model = sklearn.svm.SVR(kernel='rbf', C=1e3, gamma=0.1, epsilon=0.1)\nmodel.fit(説明変数, 目的変数)"}
+{"in":"クラス分類をアンサンブル学習で行いたい","out":"sklearn.ensemble.VotingClassifier()\nmodel.fit(説明変数, 目的変数)"}
+{"in":"デックの左に整数を追加したい","out":"_両端キュー_.appendleft(_整数_)"}
+{"in":"エラーなく空白を文字列の先頭から除きたい","out":"_文字列_.removeprefix(\" \")"}
+{"in":"タブを別の文字列へ置換したい","out":"_文字列_.replace(\"\\t\", 置換後の文字列)"}
+{"in":"リストのn番目から要素をポップしたい","out":"_リスト_.pop(n_)"}
+{"in":"辞書の項目名をリスト化したい","out":"_辞書_.keys()"}
+{"in":"結果をイテレータにしたい","out":"iter(_結果_)"}
+{"in":"<option>柿色を用いたい","out":"color = \"#ed6d3d\""}
+{"in":"整数×整数2を求めたい","out":"_整数_ * _整数2_"}
+{"in":"カテゴリデータを連番にしたい","out":"sklearn.preprocessing.LabelEncoder().fit_transform(データ列)"}
+{"in":"文字列の指定した範囲位置の間に文字が含まれるか判定したい","out":"_文字列_.find(_文字_, 開始位置, 終了位置) != -1"}
+{"in":"変数をユーザ向けの文字列化したい","out":"str(_変数_)"}
+{"in":"<option>マーカーの色はベージュ","out":"markerfacecolor = 'beige'"}
+{"in":"列名の値が文字列より大きいだけのデータフレームを知りたい","out":"_データフレーム_[_データフレーム_[_列名_] > _文字列_]"}
+{"in":"整数が非負数でないか計算したい","out":"_整数_ >= 0"}
+{"in":"mまでのスライスを確認したい","out":"slice(m_)"}
+{"in":"散布図を柿色にしたい","out":"plt.scatter(_データ列_, _データ列_, color=\"#ed6d3d\")"}
+{"in":"整数は整数2の倍数か判定したい","out":"_整数_ % _整数2_ == 0"}
+{"in":"横棒グラフをラピスラズリ色にしたい","out":"plt.bar(_データ列_, _データ列_, color=\"#426ab3\")"}
+{"in":"散布図を浅葱色にしたい","out":"plt.scatter(_データ列_, _データ列_, color=\"#00a4ac\")"}
+{"in":"柱状グラフでリストを図示したい","out":"plt.hist(_リスト_)"}
+{"in":"文字列を右寄せにしたい","out":"_文字列_.rjust(width=40)"}
+{"in":"列名によってデータフレームを降順に並べ直したい","out":"_データフレーム_.sort_values(by=_列名_, ascending=False)"}
+{"in":"配列から重複を除いた行列を作りたい","out":"np.unique(_配列_)"}
+{"in":"パーセントを円グラフに表示したい","out":"plt.pie(データ列, startangle=90, autopct='%.2f%%')"}
+{"in":"整数はタプルに含まれるか算出したい","out":"_整数_ in _タプル_"}
+{"in":"配列の和を求めたい","out":"_配列_ + _配列_"}
+{"in":"コルモゴロフ・スミルノフ検定がしたい","out":"scipy.stats.kstest(_配列または列名_, 'norm')"}
+{"in":"整数が整数の倍数か確認したい","out":"_整数_ % _整数_ == 0"}
+{"in":"エラーなく文字列の接尾辞から改行を除去したい","out":"_文字列_.removesuffix(\"\\n\")"}
+{"in":"文字列を最後のカンマで二分して後ろの方を使う","out":"_文字列_.rpartition(\",\")[-1]"}
+{"in":"枠なしの短い説明をグラフの中に表示したい","out":"plt.legend(frameon=False)"}
+{"in":"黒い一点鎖線でデータ列の推移を書きたい","out":"plt.plot(_データ列_, _データ列_, linestyle=\"dashbot\", color=\"k\")"}
+{"in":"xを紫色で出力したい","out":"print(f'\\033[35m{x}\\033[0m')"}
+{"in":"二つの変数が同じか知りたい","out":"_変数_ is _オブジェクト2_"}
+{"in":"正接が計算したい","out":"math.tan(_整数_)  # 単位はラジアン"}
+{"in":"結果はYか計算したい","out":"isinstance(_結果_, _X_)"}
+{"in":"ルートの階層化辞書","out":"collections.ChainMap()"}
+{"in":"数列の一番小さい値を計算したい","out":"min(数列)"}
+{"in":"filepathがないか調べたい","out":"not os.path.exists(filepath)"}
+{"in":"文字列が文字列の開始位置番目からと終了位置番目までの範囲に含まれないか調べたい","out":"_文字列_.find(_文字列_, 開始位置, 終了位置) == -1"}
+{"in":"データ列の年度を確認したい","out":"_データ列_.dt.year"}
+{"in":"行列の列ごとの平均値を計算したい","out":"np.mean(_行列_, axis=0)"}
+{"in":"二変数の一番小さい値を算出する","out":"min(x, y)"}
+{"in":"横棒グラフをアクアマリンにしたい","out":"plt.bar(_データ列_, _データ列_, color='aquamarine')"}
+{"in":"標準出力がパイプか調べたい","out":"not sys.stdout.isatty()"}
+{"in":"列方向に行列と行列を連結したい","out":"np.concatenate([_行列_, _行列_], axis=0)"}
+{"in":"整数2がn以上かつn3以下か求めたい","out":"_整数_ <= _整数2_ and _整数2_ <= n3"}
+{"in":"グラフの補足の場所を(x, y)変えたい","out":"plt.legend(loc=(x, y))"}
+{"in":"スクリプトのファイル名が知りたい","out":"sys.argv[0]"}
+{"in":"<option>ネイビー色を用いたい","out":"color = 'navy'"}
+{"in":"双方向キューの最初に文字列を追加したい","out":"_両端キュー_.appendleft(_文字列_)"}
+{"in":"データフレームからYのカラムのみ抽出したい","out":"_データフレーム_.select_dtypes(_X_)"}
+{"in":"空白の全文字集合を調べたい","out":"list(string.whitespace)"}
+{"in":"配列のシェイプを計算したい","out":"_配列_.shape"}
+{"in":"文字列の指定した位置以降に文字が含まれるか判定したい","out":"_文字列_.find(_文字_, 開始位置) != -1"}
+{"in":"整数の整数乗を求めたい","out":"_整数_ ** _整数_"}
+{"in":"線グラフの色を緑に設定したい","out":"plt.plot(_データ列_, _データ列_, color=\"green\")"}
+{"in":"実数掛ける整数を求めたい","out":"_実数_ * _整数_"}
+{"in":"リストを多重集合化したい","out":"FIXME collections.Counter(_リスト_)"}
+{"in":"列名の不偏分散を求めたい","out":"_データフレーム_[_列名_].var(ddof=1)"}
+{"in":"タプルをJSON形式でJSONファイルに保存したい","out":"with open(_JSONファイル_, 'w') as f:\n    json.dump(_タプル_, f, ensure_ascii=False)"}
+{"in":"コマンド引数で与えられたファイル名を一つずつ処理したい","out":"for file in sys.argv[1:]:\n    print(file)  # 具体的な処理にしたい"}
+{"in":"列名と列名の相関行列を求めたい","out":"_データフレーム_[[_列名_, _列名_]].corr()"}
+{"in":"欠損値が存在したい行を破壊的にドロップしたい","out":"_データフレーム_.dropna(inplace=True)"}
+{"in":"<option>色はブロンズ","out":"color = \"#9a6229\""}
+{"in":"空白で文字列を区切って列挙したい","out":"_文字列_.split(\" \")"}
+{"in":"複数の列名について重複を表示したい","out":"_データフレーム_.duplicated(subset=[_列名_, _列名_])"}
+{"in":"横棒グラフをラベンダーにしたい","out":"plt.bar(_データ列_, _データ列_, color='lavender')"}
+{"in":"全要素を０で初期化した整数型の行列","out":"np.zeros(行数, 列数, dtype=np.int)"}
+{"in":"横方向の棒グラフとして列名を可視化したい","out":"plt.barh(ラベル列, _データ列_)  # ラベル列と_データ列_は同じサイズ"}
+{"in":"最後のタブで文字列を分割したい","out":"_文字列_.rpartition(\"\\t\")"}
+{"in":"カウンタの要素一覧を得たい","out":"_カウンタ_.keys()"}
+{"in":"リストが正規分布か計算したい仮説検定したい","out":"scipy.stats.kstest(_リスト_, 'norm')"}
+{"in":"関数でタプルの各要素をフィルタしたい","out":"filter(_関数_, _タプル_)"}
+{"in":"グラフに鉛直の実線を付けたい","out":"plt.axvline(x=0, linestyle=\"solid\")"}
+{"in":"整数のビット長を調べたい","out":"(_整数_.bit_length() + 7) \/\/ 8"}
+{"in":"カウンタの最も頻出なキー","out":"_カウンタ_.most_common()[0]"}
+{"in":"<option>マーカーの色は桔梗","out":"markerfacecolor = \"#6a4c9c\""}
+{"in":"色名からカラーコードを求めたい","out":"matplotlib.colors.cnames[色名]"}
+{"in":"文字列の末尾から文字列を取りのきたい","out":"_文字列_.removesuffix(_文字列_)"}
+{"in":"結果の符号をコピーにしたい","out":"math.copysign(_結果_, _結果_)"}
+{"in":"文字列をカンマで区切ってリストに変換したい","out":"_文字列_.split(\",\")"}
+{"in":"整数の双曲線正弦の逆数が計算したい","out":"math.asinh(_整数_)"}
+{"in":"タプル内の要素が全て真か確認したい","out":"all(_タプル_)"}
+{"in":"黒色のヒストグラムを描画したい","out":"plt.hist(_データ列_, color=\"black\")"}
+{"in":"リストの変化を白い一点鎖線で描画したい","out":"plt.plot(_データ列_, _データ列_, linestyle=\"dashbot\", color=\"w\")"}
+{"in":"タプルの値を並べ直したい","out":"sorted(_タプル_)"}
+{"in":"文字列をアスキーコード列に変換したい","out":"[ord(ch) for ch in _文字列_]"}
+{"in":"文字列の開始位置から先に改行が含まれないか判定したい","out":"_文字列_.find(\"\\n\", 開始位置) == -1"}
+{"in":"プログラムを強制的に終了したい","out":"sys.exit()"}
+{"in":"列名が文字列で始まる行データを取り出したい","out":"_データフレーム_[_データフレーム_[_列名_].str.startswith(_文字列_)]"}
+{"in":"空白によってリストを文字列として一つの文字列化したい","out":"\" \".join(map(str, _リスト_))"}
+{"in":"データフレームの第一四分位数を調べたい","out":"_データフレーム_.quantile(0.25)"}
+{"in":"列名をグループ化してグループ名で取り出す","out":"_データフレーム_.groupby(_列名_).get_group(グループ名)"}
+{"in":"整数と整数のノルムがほしい","out":"math.hypot(_整数_, _整数_)"}
+{"in":"整数で区切ってxとyを表示したい","out":"print(x, y, sep=_整数_)"}
+{"in":"実数が整数以下またはn3以上か求めたい","out":"_実数_ <= _整数_ or _整数_ >= n3"}
+{"in":"双曲線余弦の逆数が計算したい","out":"math.acosh(_整数_)"}
+{"in":"文字列中のタブの出現がしりたい","out":"_文字列_.count(\"\\t\")"}
+{"in":"文字列を８進数として整数にしたい","out":"int(_文字列_, 8)"}
+{"in":"キーワード引数を辞書に追加したい","out":"_辞書_.update(**kwargs) # キーワード引数"}
+{"in":"データ列の変遷を黒い破線で書きたい","out":"plt.plot(_データ列_, _データ列_, linestyle=\"dashed\", color=\"k\")"}
+{"in":"文字列がアスキー文字か確認したい","out":"_文字列_.isascii()"}
+{"in":"文字が漢字か知りたい","out":"('\\u4E00' <= _文字_ <= '\\u9FD0')"}
+{"in":"横棒グラフをブロンズ色にしたい","out":"plt.bar(_データ列_, _データ列_, color=\"#9a6229\")"}
+{"in":"matplotlibでグラフのフォントサイズを大きくしたい","out":"plt.rcParams['font.size'] = 18\nplt.tight_layout()"}
+{"in":"整数が5の倍数か判定したい","out":"_整数_ % 5 == 0"}
+{"in":"データフレームを集約したい]","out":"_データフレーム_.groupby(グループ化したいカテゴリのある列名)"}
+{"in":"<option>ロイヤルブルー色を用いたい","out":"color = 'royalblue'"}
+{"in":"最初のカンマで文字列を二分して後半を見る","out":"_文字列_.partition(\",\")[-1]"}
+{"in":"整数の整数部分を確認したい","out":"math.modf(_整数_)[1]"}
+{"in":"辞書からエラーなく項目名の値を計算したい","out":"_辞書_.get(_キー_, 見つからない場合の値)"}
+{"in":"８ビット整数型のゼロ埋めしたベクトル","out":"np.zeros(要素数, dtype=np.int8)"}
+{"in":"<option>マーカーは墨色","out":"markerfacecolor = \"#343434\""}
+{"in":"文字列がリストの要素でないか知りたい","out":"_文字列_ not in _リスト_"}
+{"in":"常用対数を求めたい","out":"math.log10(_整数_)"}
+{"in":"文字列中の文字列の出現を範囲を指定してカウントしたい","out":"_文字列_.count(_文字列_, 開始位置, 終了位置)"}
+{"in":"空白区切りでリストを表示したい","out":"print(*_リスト_)"}
+{"in":"配列が何のデータ型か調べる","out":"_配列_.dtype()"}
+{"in":"空白で文字列が始まるか判定したい","out":"_文字列_.startswith(\" \")"}
+{"in":"分類モデルのPPVを知りたい","out":"sklearn.metrics.precision_score(正解データ列, 予測データ列)"}
+{"in":"結果の小数部を調べたい","out":"math.modf(_結果_)[0]"}
+{"in":"行列の行ごとの最大値を算出したい","out":"np.max(_行列_, axis=1)"}
+{"in":"回帰モデルの残差を算出したい","out":"目的変数 - model.predict(説明変数)"}
+{"in":"回帰モデルの正確さを知りたい","out":"sklearn.metrics.mean_squared_error(目的変数, model.predict(説明変数))"}
+{"in":"TSVファイルをSJISで}読みたい","out":"df = pd.read_csv(_TSVファイル_, sep='\\t', encoding='shift_jis')"}
+{"in":"文字を新しい文字へ置換したい","out":"_文字列_.replace(_文字列または文字_, 置換後の文字列)"}
+{"in":"tanからラジアンが計算したい","out":"math.atan(_数値_)"}
+{"in":"配列の移り変わりを点線で描画したい","out":"plt.plot(_データ列_, _データ列_, linestyle=\"dotted\")"}
+{"in":"文字列が全て空白からなるか調べたい","out":"_文字列_.isspace()"}
+{"in":"文字列の先頭から文字を除去したい","out":"_文字列_.lstrip(_文字_)"}
+{"in":"棒グラフの色を黒にしたい","out":"plt.bar(_データ列_, _データ列_, color=\"black\")"}
+{"in":"データフレームをグループ化して各最大値を求めたい","out":"_データフレーム_.groupby(_列名_).max()"}
+{"in":"文字列の開始位置より後に空白が含まれないか知りたい","out":"_文字列_.find(\" \", 開始位置) == -1"}
+{"in":"白色で線グラフを描画したい","out":"plt.plot(_データ列_, _データ列_, color=\"white\")"}
+{"in":"整数を赤色で表示できる文字列にしたい","out":"f'\\033[31m{_整数_}\\033[0m'"}
+{"in":"割算したい","out":"_数値_ \/ _数値2_"}
+{"in":"データフレームの列名の一覧を確認したい","out":"_データフレーム_.info()"}
+{"in":"データ列を平方根したい","out":"np.sqrt(データ列)"}
+{"in":"英大文字を小文字にしたい","out":"_文字列_.lower()"}
+{"in":"辞書のキーをタプルに設定したい","out":"_辞書_[_キー_] = _タプル_"}
+{"in":"<option>色はスプリンググリーン","out":"color = 'springgreen'"}
+{"in":"TSVファイルをデータフレームとして読みたい","out":"df = pd.read_csv(_TSVファイル_, sep='\\t')"}
+{"in":"整数のtanからラジアンが計算したい","out":"math.atan(_整数_)"}
+{"in":"文字列はPythonのキーワードか確認したい","out":"keyword.iskeyword(_文字列_)"}
+{"in":"自然対数の底の結果乗が計算したい","out":"math.exp(_結果_)"}
+{"in":"印字可能な文字列","out":"ascii(x)"}
+{"in":"<option>マーカーの色は真紅","out":"markerfacecolor = \"#b1063a\""}
+{"in":"<option>色は紅色","out":"color = \"#c22047\""}
+{"in":"小数点以下整数桁の文字列に変換したい","out":"_整数_.format(x)"}
+{"in":"整数が何桁になるか求めたい","out":"len(str(_整数_))"}
+{"in":"キュー中の整数の出現数を数えたい","out":"_両端キュー_.count(_整数_)"}
+{"in":"整数に整数を加算したい","out":"_整数_ + _整数_"}
+{"in":"整数がnより大きくかつn3未満か知りたい","out":"_数値_ < _整数_ and _整数_ < n3"}
+{"in":"CSVファイルの整数カラム目をインデックスにして}読みたい","out":"df = pd.read_csv(_CSVファイル_, sep=',', index_col=_整数_)"}
+{"in":"疑似乱数平均値と標準偏差からを生成したい","out":"random.normalvariate(mu=平均値, sigma=標準偏差)"}
+{"in":"データフレームを四捨五入したい","out":"_データフレーム_.round()"}
+{"in":"文字列としてリストをつなげる","out":"''.join(map(str, _リスト_))"}
+{"in":"文字列の最初からカンマを取り除きたい","out":"_文字列_.lstrip(\",\")"}
+{"in":"文字列の後半からカンマを探したい","out":"_文字列_.find(\",\", 開始位置)  # 見つからない場合は-1"}
+{"in":"整数の逆正弦が計算したい","out":"math.asin(_整数_)"}
+{"in":"データフレームをJSON形式に変換したい","out":"_データフレーム_.to_json(force_ascii=False)"}
+{"in":"リストを組化したい","out":"tuple(_リスト_)"}
+{"in":"filepathをベース名と拡張子に分割する","out":"os.path.splitext(filepath)"}
+{"in":"データフレームを列名と列名によって並べたい","out":"_データフレーム_.sort_values(by=[_列名_, _列名_])"}
+{"in":"<option>マーカーの色はシアン","out":"markerfacecolor = \"cyan\""}
+{"in":"配列の長さ整数のコンビネーションを計算したい","out":"itertools.combinations(_配列_, _整数_)"}
+{"in":"二重ループを単一ループで書きたい","out":"for x, y in itertools(range(0, _整数_), range(0, _整数_)):\n    print(x, y)"}
+{"in":"<option>マーカーは黒色","out":"markerfacecolor = \"black\""}
+{"in":"1行だけ改行なしに標準入力から読む","out":"sys.stdin.readline().rstrip()"}
+{"in":"横棒グラフの色を白にする","out":"plt.barh(_データ列_, _データ列_, color=\"white\")"}
+{"in":"リストから複数の要素をランダムに重複なく取り出したい","out":"random.sample(_リスト_, k=n)"}
+{"in":"タプルをリスト化したい","out":"list(_タプル_)"}
+{"in":"二つの整数の商を求めたい","out":"_整数_ \/ _数値2_"}
+{"in":"整数は整数2以上か求めたい","out":"_整数_ >= _整数2_"}
+{"in":"タプルをナンバリングしたい","out":"enumerate(_タプル_)"}
+{"in":"折れ線グラフの色を黄に設定したい","out":"plt.plot(_データ列_, _データ列_, color=\"yellow\")"}
+{"in":"実数を実数で割ったモジュロを計算したい","out":"_実数_ % _数値2_"}
+{"in":"文字列の右側から文字列を除去したい","out":"_文字列_.rstrip(_文字列_)"}
+{"in":"空の勾配ブースティング分類木を準備したい","out":"model = sklearn.ensemble.GradientBoostingClassifier()\nmodel.fit(説明変数, 目的変数)"}
+{"in":"ハッシュ値を計算する","out":"hash(x)"}
+{"in":"イテレータとイテレータの全要素の組み合わせを求めたい","out":"itertools.product(_イテレータ_, _イテレータ_)"}
+{"in":"横棒グラフを小麦にしたい","out":"plt.bar(_データ列_, _データ列_, color='wheat')"}
+{"in":"変数は整数か知りたい","out":"isinstance(_変数_, int)"}
+{"in":"<option>マーカーは鶯色","out":"markerfacecolor = \"#918d40\""}
+{"in":"タプルを番号付けしながら繰り返し処理したい","out":"for i, value in enumerate(_タプル_):\n    print(i, value) #"}
+{"in":"２つの整数が十分に近いか調べたい","out":"math.isclose(_整数_, _整数_)"}
+{"in":"配列と列名を散布図に描画したい","out":"plt.scatter(_配列_, _データ列_)"}
+{"in":"改行で文字列を区切り文字列リストにしたい","out":"_文字列_.splitlines()"}
+{"in":"結果と結果の斜辺が計算したい","out":"math.hypot(_結果_, _結果_)"}
+{"in":"整数を整数で割ったmodを求めたい","out":"_整数_ % _整数2_"}
+{"in":"option: バッファリングのサイズを大きくする","out":"buffering = 4096"}
+{"in":"xとyの商と余りを同時に求める","out":"divmod(x, y)"}
+{"in":"文字列で文字列が終了するか判定したい","out":"_文字列_.endswith(_文字列_)"}
+{"in":"特異値分解を行いたい","out":"model = sklearn.decomposition.TruncatedSVD(n_components=n)"}
+{"in":"実数を実数でわりたい","out":"_実数_ \/ _実数_"}
+{"in":"文字列のある位置以前にカンマが含まれないか判定したい","out":"_文字列_.find(\",\", 0, 終了位置) == -1"}
+{"in":"最初のタブで文字列を二分したい","out":"_文字列_.partition(\"\\t\")"}
+{"in":"整数のビット長を求めたい","out":"_整数_.bit_length()"}
+{"in":"xが真か知りたい","out":"bool(x)"}
+{"in":"配列の平均の標準誤差を知りたい","out":"scipy.stats.sem(_配列_)"}
+{"in":"JSONフォーマットで辞書をJSONファイルにダンプしたい","out":"with open(_JSONファイル_, 'w') as f:\n    json.dump(_辞書_, f, ensure_ascii=False)"}
+{"in":"散布図を群青色にしたい","out":"plt.scatter(_データ列_, _データ列_, color=\"#465daa\")"}
+{"in":"<option>マーカーの色は若草","out":"markerfacecolor = \"#abc900\""}
+{"in":"自分自身をモジュールとしてを使用したい","out":"sys.modules[_name_]"}
+{"in":"文字列の最初から空白を取りのきたい","out":"_文字列_.lstrip(\" \")"}
+{"in":"リストが正規分布か確認したい仮説検定したい","out":"scipy.stats.shapiro(_リスト_)"}
+{"in":"データ列間の平方根平均二乗誤差を算出したい","out":"np.sqrt(sklearn.metrics.mean_squared_error(データ列, データ列))"}
+{"in":"行列の列ごとの分散を知りたい","out":"np.var(_行列_, axis=0)"}
+{"in":"列名が整数以上整数未満の行データを抽出したい","out":"_データフレーム_[(_整数_ <= _データフレーム_[_列名_]) & (_データフレーム_[_列名_] < _整数_)]"}
+{"in":"横棒グラフをロイヤルブルーにしたい","out":"plt.bar(_データ列_, _データ列_, color='royalblue')"}
+{"in":"カウンタをゼロにしたい","out":"_カウンタ_.clear()"}
+{"in":"辞書の項目名と値を入れ替えたい","out":"{v: k for k, v in _辞書_.items()}"}
+{"in":"エラーなく文字列の左側から文字列を消したい","out":"_文字列_.removeprefix(_文字列_)"}
+{"in":"配列を累加したイテレータがみたい","out":"itertools.accumulate(_配列_)"}
+{"in":"リストの末尾に結果を追加したい","out":"_リスト_.append(_結果_)"}
+{"in":"グラフのx座標の目盛りを表示したくない","out":"plt.xticks([])"}
+{"in":"列名が文字列以上文字列以下の行データを取り出したい","out":"_データフレーム_[(_文字列_ <= _データフレーム_[_列名_]) & (_データフレーム_[_列名_] <= _文字列_)]"}
+{"in":"列名のパーセンタイルを求めたい","out":"_データフレーム_[_列名_].quantile(_パーセント_\/100)"}
+{"in":"配列が正規分布か判定したい仮説検定したい","out":"scipy.stats.shapiro(_配列_)"}
+{"in":"データフレームの整数行目より前を抽出したい","out":"_データフレーム_[:_整数_]"}
+{"in":"整数乱数で要素を埋めたベクトル","out":"np.random.randint(開始値, 終了値, N)"}
+{"in":"行列のユニークな各要素の頻度を使う","out":"np.unique(_配列_, return_counts=True)"}
+{"in":"全要素が0で初期化したベクトルを作成したい","out":"np.zeros(要素数)"}
+{"in":"文字列の接尾辞は空白か算出したい","out":"_文字列_.endswith(\" \")"}
+{"in":"タプルの要素を昇順に並べ直したい","out":"sorted(_タプル_, reverse=True)"}
+{"in":"データフレームをソートして下の方だけ取り出したい","out":"_データフレーム_.sort_values(by=_列名_).tail(_整数_)"}
+{"in":"横棒グラフを濃いピンクにしたい","out":"plt.bar(_データ列_, _データ列_, color='deeppink')"}
+{"in":"等差数列から整数乱数が欲しい","out":"random.randrange(初項, 終項, 公差)"}
+{"in":"列名をリストに変換したい","out":"_データフレーム_[_列名_].values.tolist()"}
+{"in":"行列の行ごとの分散を求めたい","out":"np.var(_行列_, axis=1)"}
+{"in":"option: ラインスタイルを点線にセットしたい","out":"linestyle = \"dotted\""}
+{"in":"縦棒グラフをグリーン色にしたい","out":"plt.bar(_データ列_, _データ列_, color='green')"}
+{"in":"リストから複数個ランダムに乱択したい","out":"random.choices(_リスト_, k=n)  # nに個数指定"}
+{"in":"<option>青緑色を使いたい","out":"color = \"#0090a8\""}
+{"in":"結果からフィールドを削除したい","out":"delattr(_結果_, _プロパティ_)"}
+{"in":"列名をドロップしてみたい","out":"_データフレーム_.drop(_列名_, axis=1)"}
+{"in":"グリッドを一点鎖線にしたい","out":"plt.grid(linestyle=\"dashbot\")"}
+{"in":"ピアソンで列名と列名の相関行列を知りたい","out":"_データフレーム_[[_列名_, _列名_]].corr(method='pearson')"}
+{"in":"逆双曲線正弦を求めたい","out":"math.asinh(_結果_)"}
+{"in":"整数回文字列を繰り返す列を算出したい","out":"itertools.repeat(_文字列_, _整数_)"}
+{"in":"分類モデルを作りたい","out":"model.fit(説明変数, 目的変数)"}
+{"in":"全要素を初期値で初期化した行列を作りたい","out":"np.full(要素数, 初期値, dtype=np.int)"}
+{"in":"０で全要素を初期化した行列","out":"np.zeros(行数, 列数)"}
+{"in":"円グラフにラベルを付けたい","out":"plt.pie(データ列, startangle=90, labels=ラベル列)"}
+{"in":"天井数が計算したい","out":"math.ceil(_整数_)"}
+{"in":"整数までの偶数列を使用したい","out":"list(range(0, _整数_, 2))"}
+{"in":"<option>灰汁色を使用したい","out":"color = \"#bcb09c\""}
+{"in":"長さ整数の数列を用いたい","out":"[0] * _整数_"}
+{"in":"文字列を最後から空白で区切ってリストにしたい","out":"_文字列_.rsplit(\" \")"}
+{"in":"配列の重複組み合わせをリストにしたい","out":"list(itertools.combinations_with_replacement(_配列_, 2))"}
+{"in":"整数同士のXORを計算したい","out":"_整数_ ^ _整数2_"}
+{"in":"縦棒グラフを描画して左寄せしたい","out":"plt.bar(ラベル列, データ列, align='edge')"}
+{"in":"タプルでカウンタを更新したい","out":"_カウンタ_.update(_タプル_)"}
+{"in":"実数が非負数でないか求めたい","out":"_実数_ >= 0"}
+{"in":"整数を十六進数表記化したい","out":"hex(_整数_)"}
+{"in":"3つの整数の最小公倍数がほしい","out":"math.lcm(_整数_, _整数_, _整数_)"}
+{"in":"有理数が使いたい","out":"import fractions"}
+{"in":"文字列をバイト配列にしたい","out":"bytearray(_文字列_)"}
+{"in":"数値の小数部を知りたい","out":"math.modf(_数値_)[0]"}
+{"in":"配列の行ごとの合計値を求めたい","out":"np.sum(_配列_, axis=1)"}
+{"in":"テンプレートをタプルをパラメータとしてフォーマットしたい","out":"書式文字列.format(*_タプル_)"}
+{"in":"列名の母標準偏差を確認したい","out":"_データフレーム_[_列名_].std(ddof=0)"}
+{"in":"<option>貝殻色を用いたい","out":"color = 'seashell'"}
+{"in":"積み上げ水平な棒グラフを描きたい","out":"plt.barh(ラベル列, データ列, bottom=_データ列_, color='#800080')"}
+{"in":"白色でxを表示したい","out":"print(f'\\033[37m{x}\\033[0m')"}
+{"in":"辞書の浅いコピーを生成する","out":"_辞書_.copy()"}
+{"in":"リストのコンビネーションを繰り返したい","out":"for x, y in itertools.combinations(_リスト_, 2):\n    print(x, y)"}
+{"in":"データフレームから重複を残さず重複を消したい","out":"_データフレーム_.drop_duplicates(keep=False, inplace=True)"}
+{"in":"小さい順に列名をキーにしてデータフレームを並べたい","out":"_データフレーム_.sort_values(by=_列名_, ascending=True)"}
+{"in":"nからn2の範囲を使う","out":"range(n, n2)"}
+{"in":"<option>データ型として符号なし８ビット整数を使う","out":"dtype = np.uint8"}
+{"in":"リストのn番目に結果を加えたい","out":"_リスト_.insert(n_, _結果_)"}
+{"in":"ムーア・ペンローズの擬似逆行列を求めたい","out":"np.linalg.pinv(_行列_)"}
+{"in":"データフレームの相関行列をスピアマンで計算したい","out":"_データフレーム_.corr(method='spearman')"}
+{"in":"filepathをYでオープンする","out":"_X_ = 'utf-8'\nopen(filepath, encoding=_X_)"}
+{"in":"句点の全文字集合を使いたい","out":"list(string.punctuation)"}
+{"in":"横棒グラフをセピア色にしたい","out":"plt.bar(_データ列_, _データ列_, color=\"#6b4a2b\")"}
+{"in":"リストを文字列としてタブを挟んで一つにしたい","out":"\"\\t\".join(map(str, _リスト_))"}
+{"in":"xの小数点以下文字列桁までをプリントしたい","out":"_文字列_ = ':.3f'\nprint(_文字列_.format(x))"}
+{"in":"棒グラフを橙にしたい","out":"plt.bar(_データ列_, _データ列_, color='orange')"}
+{"in":"実数は整数の倍数でないとき","out":"if _実数_ % _整数_ != 0:\n    print(_実数_, _整数_)"}
+{"in":"結果の整数を使いたい","out":"math.modf(_結果_)[1]"}
+{"in":"２つの整数のビット積を求めたい","out":"_整数_ & _整数2_"}
+{"in":"整数のアークコサインを求めたい","out":"math.acos(_整数_)"}
+{"in":"イテレータとイテレータのデカルト積がリストとして欲しい","out":"list(itertools.product(_イテレータ_, _イテレータ_))"}
+{"in":"<option>マーカーの色は赤","out":"markerfacecolor = \"red\""}
+{"in":"整数は整数の倍数でないとき","out":"if _整数_ % _整数_ != 0:\n    print(_整数_, _整数_)"}
+{"in":"n回だけ文字列中の文字を置き替えたい","out":"_文字列_.replace(_文字列または文字_, 置換後の文字列, n)"}
+{"in":"両端キューを求めたい","out":"collections.deque()"}
+{"in":"1６進数字の全ての文字セットがみたい","out":"list(string.hexdigits)"}
+{"in":"辞書をJSONフォーマットにエンコードしたい","out":"json.dumps(_辞書_, ensure_ascii=False)"}
+{"in":"散布図を杏にしたい","out":"plt.scatter(_データ列_, _データ列_, color=\"#f4a466\")"}
+{"in":"リストの標準誤差を求めたい","out":"scipy.stats.sem(_リスト_)"}
+{"in":"無限大を求めたい","out":"math.inf"}
+{"in":"文字列の前半からタブを探したい","out":"_文字列_.find(\"\\t\", 0, 終了位置)  # 見つからない場合は-1"}
+{"in":"文字列中にひとつでも数字が含まれるか確認したい","out":"any(c.isdigit() for c in _文字列_)"}
+{"in":"<option>マーカーは白色","out":"markerfacecolor = 'white'"}
+{"in":"文字列中にカンマがいくつか含まれるか調べたい","out":"_文字列_.count(\",\")"}
+{"in":"二次元タプルをflattenしたい","out":"sum(_タプル_)"}
+{"in":"最大最小で正規化をしたい","out":"sklearn.preprocessing.MinMaxScaler().fit_transform(データ)"}
+{"in":"棒グラフを桜にしたい","out":"plt.bar(_データ列_, _データ列_, color=\"#feeeed\")"}
+{"in":"MSDで多次元データを整数次元に削減したい","out":"sklearn.manifold.MSD(n_components=_整数_).fit_transform(多次元データ)"}
+{"in":"重複した行だけ新しいデータフレームにしたい","out":"_データフレーム_[_データフレーム_.duplicated(keep=False)]"}
+{"in":"縦棒グラフを描画したい","out":"ラベル列 = ['A', 'B', 'C']\nデータ列 = [10, 8, 6]\nplt.bar(ラベル列, データ列)"}
+{"in":"ユーザから入力される","out":"input()"}
+{"in":"データフレームのインデックスの一覧を知りたい","out":"_データフレーム_.index"}
+{"in":"結果が非数か計算したい","out":"math.isnan(_結果_)"}
+{"in":"黄色にしたい","out":"f'\\033[33m{_整数_}\\033[0m'"}
+{"in":"配列を関数で除去したい","out":"itertools.dropwhile(_関数_, _配列_)"}
+{"in":"文字列の先頭を求めたい","out":"_文字列_[0]"}
+{"in":"3つの整数のGCDを求めたい","out":"math.gcd(_整数_, _整数_, _整数_)"}
+{"in":"整数で乱数生成列を固定したい","out":"random.seed(_整数_)"}
+{"in":"option: エラーを無視するように設定する","out":"errors = 'ignore'"}
+{"in":"自然対数が計算したい","out":"math.log(_整数_)"}
+{"in":"整数を青色にしたい","out":"f'\\033[34m{_整数_}\\033[0m'"}
+{"in":"<option>色は珊瑚","out":"color = 'coral'"}
+{"in":"リストから文字列を取り除きたい","out":"_リスト_.remove(_文字列_)"}
+{"in":"実数の差を求めたい","out":"_実数_ - _数値2_"}
+{"in":"データフレームから列名のリストを指定して選択したい","out":"_データフレーム_[列名のリスト]"}
+{"in":"配列の組み合わせをループしたい","out":"for x, y in itertools.combinations(_配列_, 2):\n    print(x, y)"}
+{"in":"横棒グラフをミッドナイトブルーにしたい","out":"plt.bar(_データ列_, _データ列_, color='midnightblue')"}
+{"in":"リストが空でないか算出したい","out":"len(_リスト_) != 0"}
+{"in":"JSONを用いる","out":"import json"}
+{"in":"正則化付き線形回帰分析をしたい","out":"model = sklearn.linear_model.ElasticNet()"}
+{"in":"文字列を空白で二つに区切ってて残りを使う","out":"_文字列_.partition(\" \")[-1]"}
+{"in":"文字列を出力したい","out":"print(_文字列_)"}
+{"in":"データフレームから重複を取り除きたい","out":"_データフレーム_.drop_duplicates(inplace=True)"}
+{"in":"文字の登場を範囲を指定して数えたい","out":"_文字列_.count(_文字_, 開始位置, 終了位置)"}
+{"in":"配列を計数器にしたい","out":"FIXME collections.Counter(_配列_)"}
+{"in":"タプルの最後からn番目以前の要素を取り出したい","out":"_タプル_[:-n_]"}
+{"in":"散布図を朱にしたい","out":"plt.scatter(_データ列_, _データ列_, color=\"#ef454a\")"}
+{"in":"補足を最適な位置に表示したい","out":"plt.legend(loc=\"best\")"}
+{"in":"配列の列ごとの平均を計算したい","out":"np.mean(_配列_, axis=0)"}
+{"in":"配列を転置したい","out":"_配列_.T"}
+{"in":"列名の値ごとの合計を知りたい","out":"_データフレーム_.groupby(_列名_).sum()"}
+{"in":"整数をデックの末尾につけ加えたい","out":"_両端キュー_.append(_整数_)"}
+{"in":"高頻出な方からカウンタを列挙したい","out":"_カウンタ_.most_common()"}
+{"in":"太文字でxを出力したい","out":"print(f'\\033[1m{x}\\033[0m')"}
+{"in":"f全体を行ごとに分割してリストに変換する","out":"[s.strip() for s in f.readlines()]"}
+{"in":"文字列を最初の文字で二分して後半を使う","out":"_文字列_.partition(_文字_)[-1]"}
+{"in":"タプルが辞書の値に含まれていないか判定したい","out":"_タプル_ not in _辞書_.values()"}
+{"in":"<option>オリーブ色を使用したい","out":"color = 'olive'"}
+{"in":"option: 区切り記号を使わない","out":"sep = ''"}
+{"in":"リストをn回接続したい","out":"_リスト_ * n_"}
+{"in":"結果の参照カウントが算出したい","out":"sys.getrefcount(_結果_)"}
+{"in":"箱髭図でデータフレームのカラムを作図したい","out":"plt.boxplot(df['_列名_'])"}
+{"in":"オブジェクトのフィールドの値を計算したい","out":"getattr(オブジェクト, _プロパティ_)"}
+{"in":"両端キューの中にオブジェクトがあるか求めたい","out":"要素 in _両端キュー_"}
+{"in":"数値の整数部を知りたい","out":"math.modf(_数値_)[1]"}
+{"in":"2進対数が計算したい","out":"math.log2(_結果_)"}
+{"in":"<option>茜色を使いたい","out":"color = \"#b13546\""}
+{"in":"実数の整数乗を計算したい","out":"_実数_ ** _整数_"}
+{"in":"列名をベクトルに変換したい。NaNも含めて","out":"pd.get_dummies(_データフレーム_[_列名_], dummy_na=True)"}
+{"in":"nからn2までの整数リストがひとつ飛ばしで欲しい","out":"list(range(n_, n_+1, 2))"}
+{"in":"既にロードしたモジュールの一覧を調べたい","out":"sys.modules"}
+{"in":"行列の最小を知りたい","out":"np.min(_配列_)"}
+{"in":"NULLに等しい値","out":"None"}
+{"in":"文字列の末尾から改行を消したい","out":"_文字列_.rstrip(\"\\n\")"}
+{"in":"<option>朱色を使いたい","out":"color = \"#ef454a\""}
+{"in":"もしコマンド引数が与えられたなら処理したい","out":"if len(sys.argv) > 1:\n    print(sys.argv[1])  # 具体的な処理にしたい"}
+{"in":"散布図を浅緑にしたい","out":"plt.scatter(_データ列_, _データ列_, color=\"#9bcf97\")"}
+{"in":"option: n番目のカラムをインデックスに設定したい","out":"index_col = n"}
+{"in":"散布図を赤紫にしたい","out":"plt.scatter(_データ列_, _データ列_, color=\"#eb6ea5\")"}
+{"in":"カウンタから最頻出のキーの件数","out":"_カウンタ_.most_common()[1]"}
+{"in":"文字列で区切ってxとyを表示したい","out":"print(x, y, sep=_文字列_)"}
+{"in":"t分布型確率的近傍埋め込み法で多次元データを整数次元に削減したい","out":"sklearn.manifold.TSNE(n_components=_整数_).fit_transform(多次元データ)"}
+{"in":"横棒グラフをシグナルレッドにしたい","out":"plt.bar(_データ列_, _データ列_, color=\"#EF4050\")"}
+{"in":"配列が正規分布か判定したい仮説検定したい","out":"scipy.stats.kstest(_配列_, 'norm')"}
+{"in":"横棒グラフを象牙にしたい","out":"plt.bar(_データ列_, _データ列_, color='ivory')"}
+{"in":"オブジェクトが実数か調べたい","out":"isinstance(オブジェクト, float)"}
+{"in":"縦軸だけ目盛り線を引く","out":"plt.grid(axis='y')"}
+{"in":"横棒グラフを緑色で描画する","out":"plt.barh(_データ列_, _データ列_, color=\"green\")"}
+{"in":"散布図を若草色にしたい","out":"plt.scatter(_データ列_, _データ列_, color=\"#abc900\")"}
+{"in":"<option>色は浅緑","out":"color = \"#9bcf97\""}
+{"in":"整数が整数もしくは整数か計算したい","out":"_整数_ in (_整数_, _整数_)"}
+{"in":"列名と列名の相関行列を描画したい","out":"sns.heatmap(_データフレーム_[[_列名_, _列名_]].corr())"}
+{"in":"半透明の破線でデータ列の移り変わりを書きたい","out":"plt.plot(_データ列_, _データ列_, linestyle=\"dashed\", alpha=0.5)"}
+{"in":"文字列中の空白の出現を知りたい","out":"_文字列_.count(\" \")"}
+{"in":"マゼンタ色の横棒グラフを描画したい","out":"plt.barh(_データ列_, _データ列_, color=\"magenta\")"}
+{"in":"グラフの縦軸の目盛りを表示したくない","out":"plt.yticks([])"}
+{"in":"リストをランダムに入れ替えたい","out":"random.shuffle(_リスト_)"}
+{"in":"複素数型のゼロ埋めした行列を作成したい","out":"np.zeros(要素数, dtype=complex)"}
+{"in":"結果ひとつのりストが欲しい","out":"[_結果_]"}
+{"in":"文字列を最後のタブで分けたときの後半の文字列を取り出す","out":"_文字列_.rpartition(\"\\t\")[-1]"}
+{"in":"<option>色はバイオレット","out":"color = 'violet'"}
+{"in":"結果をインデント幅を指定してJSON文字列化したい","out":"json.dumps(_結果_, ensure_ascii=False, indent=4)"}
+{"in":"回帰モデルをクロスバリデーションしたい","out":"sklearn.model_selection.cross_val_score(model, 説明変数, 目的変数, cv=5, scoring='r2')"}
+{"in":"太字でプリントできる文字列化したい","out":"f'\\033[1m{_文字列_}\\033[0m'"}
+{"in":"結果を文字列にしたい","out":"str(_結果_)"}
+{"in":"列名が整数以上の行データを取り出したい","out":"_データフレーム_[_データフレーム_[_列名_] >= _整数_]"}
+{"in":"２つの変数が同じ値か算出したい","out":"_変数_ == _オブジェクト2_"}
+{"in":"数値の自然対数がほしい","out":"math.log(_数値_)"}
+{"in":"整数は一桁の整数か知りたい","out":"0 <= _整数_ <= 9"}
+{"in":"SW検定を行いたい","out":"scipy.stats.shapiro(_配列または列名_)"}
+{"in":"データをスケール変換したい","out":"sklearn.preprocessing.StandardScaler().fit_transform(データ)"}
+{"in":"<option>マーカーはピンク色","out":"markerfacecolor = 'pink'"}
+{"in":"多次元尺度構成法を行いたい","out":"model = sklearn.manifold.MSD(n_components=n)"}
+{"in":"三つの最も大きい値を計算する","out":"max(x, y, z)"}
+{"in":"１６進数表現の文字列をバイナリに変換したい","out":"int(_文字列_, 16).to_bytes(length=バイト数, byteorder='big')"}
+{"in":"実数を実数で割ってその結果を切り捨てたい","out":"_実数_ \/\/ _実数_"}
+{"in":"数値と数値のノルムを求めたい","out":"math.hypot(_数値_, _数値_)"}
+{"in":"複数のカラムからグループ化し列名を知りたい","out":"_データフレーム_.groupby(['列A', '列B'], as_index=False)._集約_"}
+{"in":"結果のハッシュ値計算したい","out":"hash(_結果_)"}
+{"in":"ペアリストpairsからカウンタを構築したい","out":"collections.Counter(dict(pairs))"}
+{"in":"列名が正規分布か調べたい仮説検定したい","out":"scipy.stats.shapiro(_データフレーム_[_列名_])"}
+{"in":"ネームドタプルを辞書に変換したい","out":"aNamedTupleObject._asdict()"}
+{"in":"リストを横向き棒グラフとして描画したい","out":"plt.barh(ラベル列, _リスト_)  # ラベル列と_リスト_は同じサイズ"}
+{"in":"リストの全ての値を取り除きたい","out":"_リスト_.clear()"}
+{"in":"新しい勾配ブースティング回帰木を新規作成したい","out":"model = sklearn.ensemble.GradientBoostingRegressor()\nmodel.fit(説明変数, 目的変数)"}
+{"in":"文字列の後ろから範囲を指定して空白を探したい","out":"_文字列_.find(\" \", 開始位置, 終了位置)  # 見つからない場合は-1"}
+{"in":"ファイル名からJSONフォーマットのデータを読み込みたい","out":"with open(ファイル名) as f:\n    data = json.load(f)"}
+{"in":"データフレームを列名とリストの辞書に変換したい","out":"_データフレーム_.to_dict(orient='list')"}
+{"in":"ヒートマップでデータフレームの相関行列を描画したい","out":"sns.heatmap(_データフレーム_.corr())"}
+{"in":"JSONファイルを構文解析したい","out":"with open(_ファイル名_) as f:\n    data = json.load(f)"}
+{"in":"赤い実線で配列の変遷を書きたい","out":"plt.plot(_データ列_, _データ列_, linestyle=\"solid\", color=\"r\")"}
+{"in":"結果が有限か算出したい","out":"math.isfinite(_結果_)"}
+{"in":"UTF8で文字列をバイト列にしたい","out":"_文字列_.encode(encoding='utf-8', errors='strict')"}
+{"in":"タプルの最後を除きたい","out":"_タプル_[:-1]"}
+{"in":"<option>マーカーは緑色","out":"markerfacecolor = 'green'"}
+{"in":"改行で文字列を区切って整数列化したい","out":"list(map(int, _文字列_.split(\"\\n\")))"}
+{"in":"データフレームを小さい順にインデックスを用いて整列したい","out":"_データフレーム_.sort_index(ascending=True)"}
+{"in":"標準入力の入力元がターミナルか判定したい","out":"os.isatty(sys.stdin.fileno())"}
+{"in":"標準エラーを調べたい","out":"sys.stderr"}
+{"in":"option: 説明変数を事前に正規化したい","out":"normalize = True"}
+{"in":"列名を破壊的に除きたい","out":"_データフレーム_.drop(_列名_, axis=1, inplace=True)"}
+{"in":"列名の値によってデータフレームをグループ化し統計量を知りたい","out":"_データフレーム_.groupby(_列名_).describe()"}
+{"in":"整数のY分の一を求めたい","out":"_整数_ \/ _X_"}
+{"in":"主成分分析で多次元データを整数次元に次元削減したい","out":"sklearn.decomposition.PCA(n_components=_整数_).fit_transform(多次元データ)"}
+{"in":"無限リストを用いたい","out":"itertools.count()"}
+{"in":"文字列を空白で二つに分けたい","out":"_文字列_.partition()"}
+{"in":"2つの整数を表示したい","out":"print(_整数_, _整数_)"}
+{"in":"配列と配列をジップしたい","out":"itertools.zip_longest(_配列_, _配列_)"}
+{"in":"最後のタブで文字列を二分して最初の方を使う","out":"_文字列_.rpartition(\"\\t\")[0]"}
+{"in":"整数は整数で割り切れないか求めたい","out":"_整数_ % _整数_ != 0"}
+{"in":"列名の値ごとの標準偏差","out":"_データフレーム_.groupby(_列名_).std()"}
+{"in":"option: プリントの終端に文字列を用いる","out":"end = _文字列_"}
+{"in":"eの乗数がほしい","out":"math.exp(_数値_)"}
+{"in":"相関係数を算出したい","out":"scipy.stats.pearsonr(_配列_, _配列_)"}
+{"in":"データフレームの最初の列以外を説明変数にしたい","out":"説明変数 = _データフレーム_[_データフレーム_.columns[1:]]"}
+{"in":"列名をキーにしてデータフレームを並べ直したい","out":"_データフレーム_.sort_values(by=_列名_)"}
+{"in":"横棒グラフを乳白にしたい","out":"plt.bar(_データ列_, _データ列_, color=\"#fffef6\")"}
+{"in":"整数ひとつのりストがみたい","out":"[_整数_]"}
+{"in":"イテラブルの変化を白い破線で書きたい","out":"plt.plot(_データ列_, _データ列_, linestyle=\"dashed\", color=\"w\")"}
+{"in":"実数がnより大きくかつn3未満か確認したい","out":"_数値_ < _実数_ and _実数_ < n3"}
+{"in":"散布図を青紫色にしたい","out":"plt.scatter(_データ列_, _データ列_, color=\"#6f51a1\")"}
+{"in":"<option>色は真紅色","out":"color = \"#b1063a\""}
+{"in":"散布図を墨にしたい","out":"plt.scatter(_データ列_, _データ列_, color=\"#343434\")"}
+{"in":"配列の列ごとの合計値を計算したい","out":"np.sum(_配列_, axis=0)"}
+{"in":"変数の型が知りたい","out":"type(_変数_)"}
+{"in":"<option>色はブルー","out":"color = 'blue'"}
+{"in":"データフレームにJSONLファイルを読みたい","out":"pd.read_json(_JSONLファイル_, orient='records', lines=True)"}
+{"in":"データフレームの列名を説明変数にしたい","out":"説明変数 = _データフレーム_[[_列名_]]"}
+{"in":"列名と列名だけのデータフレームがみたい","out":"_データフレーム_[[_列名_, _列名_]]"}
+{"in":"<option>マーカーの色は赤紫","out":"markerfacecolor = \"#eb6ea5\""}
+{"in":"タプルの要素を空白区切りで出力したい","out":"print(*_タプル_)"}
+{"in":"オブジェクトがリストか確認したい","out":"isinstance(オブジェクト, list)"}
+{"in":"文字列を形態素解析したい","out":"from janome.tokenizer import Tokenizer\njanome = Tokenizer()\nfor token in janome.tokenize(_文字列_):\n    print(token)"}
+{"in":"データフレームを列名を用いて並べたい。昇順にしたい","out":"_データフレーム_.sort_values(by=_列名_, ascending = True)"}
+{"in":"項目名が辞書にないとき整数を追加したい","out":"_辞書_.setdefault(_キー_, _整数_)"}
+{"in":"余弦が計算したい","out":"math.cos(_数値_)  # 単位はラジアン"}
+{"in":"何度もイテレータの要素を繰り返したい","out":"for x in itertools.cycle(_イテレータ_):\n    print(x)"}
+{"in":"文字列の左側から文字列の位置を探したい","out":"_文字列_.find(_文字列_)"}
+{"in":"余弦からラジアンがほしい","out":"math.acos(_数値_)"}
+{"in":"数値の絶対値がほしい","out":"math.fabs(_数値_)"}
+{"in":"データ列の平均絶対誤差を計算したい","out":"sklearn.metrics.mean_absolute_error(データ列, データ列)"}
+{"in":"データフレームからある型の列を取り出したい","out":"_データフレーム_.select_dtypes(include=[_型名_])"}
+{"in":"インデントを指定してリストをJSON形式にエンコードしたい","out":"json.dumps(_リスト_, ensure_ascii=False, indent=4)"}
+{"in":"散布図を青緑色にしたい","out":"plt.scatter(_データ列_, _データ列_, color=\"#0090a8\")"}
+{"in":"上限整数のスタックを作りたい","out":"collections.deque(maxlen=_整数_)"}
+{"in":"アンダーライン付きでxをプリントしたい","out":"print(f'\\033[2m{x}\\033[0m')"}
+{"in":"整数割る整数を求めたい","out":"_整数_ \/ _整数_"}
+{"in":"ランダム性を強化したランダムフォレストでクラス分類を行いたい","out":"model = sklearn.ensemble.ExtraTreeClassifier(n_estimators=10)\nmodel.fit(説明変数, 目的変数)"}
+{"in":"マゼンタ色で散布図を描画したい","out":"plt.scatter(_データ列_, _データ列_, color=\"magenta\")"}
+{"in":"改行で後ろから文字列を区切って列挙したい","out":"_文字列_.rsplit(\"\\n\")"}
+{"in":"文字列を最後の改行で二つに分けたい","out":"_文字列_.rpartition(\"\\n\")"}
+{"in":"<option>セピア色を使いたい","out":"color = \"#6b4a2b\""}
+{"in":"２point間のユークリッド距離がほしい","out":"math.dist(_リスト_, _リスト2_)"}
+{"in":"<option>マーカーの色は青","out":"markerfacecolor = \"blue\""}
+{"in":"改行除外してfを一行ずつ読む","out":"f.readline()"}
+{"in":"整数が整数もしくは整数もしくは整数に等しいか知りたい","out":"_整数_ in (_整数_, _整数_, _整数_)"}
+{"in":"リストと配列を散布図に図示したい","out":"plt.scatter(_リスト_, _配列_)"}
+{"in":"オブジェクトの種類が計算したい","out":"type(オブジェクト)"}
+{"in":"例外の種類を確認したい","out":"etype, evalue, traceback = sys.exc_info()"}
+{"in":"ホールドアウトを使用する","out":"X_train, X_test, y_train, y_test = train_test_split(説明変数, 目的変数, test_size=0.3)"}
+{"in":"文字列をカンマで二つに分けたい","out":"_文字列_.partition(\",\")"}
+{"in":"option: 欠損値も含める","out":"dropna = False"}
+{"in":"結果がリストに含まれないか判定したい","out":"_結果_ not in _リスト_"}
+{"in":"みっつの条件が成り立つ","out":"_条件_ and _条件_ and _条件_"}
+{"in":"イテレータでマスクしたイテレータを算出したい","out":"itertools.compress(_イテレータ_, selectors=_イテレータ_)"}
+{"in":"水色にしたい","out":"f'\\033[36m{_結果_}\\033[0m'"}
+{"in":"文字列を中央寄せしたい","out":"_文字列_.center(width=40)"}
+{"in":"変数を整数乗に増やしたい","out":"変数 **= _整数_"}
+{"in":"単位行列を作成したい","out":"np.eye(行数, 列数)"}
+{"in":"リストの最後を除きたい","out":"_リスト_[:-1]"}
+{"in":"整数が整数2未満またはn3以上か計算したい","out":"_整数_ < _整数2_ or _整数_ >= n3"}
+{"in":"リストのn番目を消したい","out":"del _リスト_[n_]"}
+{"in":"サインをグラフ表示したい","out":"x = np.arange(-np.pi, -np.pi, 0.25)\ny = np.sin(x)\nplt.plot(x, y, label='$y=\\sin{x}$')      # 曲線を引く\nplt.show()              # グラフ表示"}
+{"in":"辞書のキーを繰り返し処理したい","out":"for key in _辞書_.keys():\n    print(_辞書_[key])  # 具体的に"}
+{"in":"散布図の色を緑にしたい","out":"plt.scatter(_データ列_, _データ列_, color=\"green\")"}
+{"in":"モデルの当てはまりの良さを知りたい","out":"sklearn.metrics.r2_score(目的変数, model.predict(説明変数))"}
+{"in":"カウンタの項目数を得たい","out":"len(_カウンタ_)"}
+{"in":"データフレームを列名と列名で並べ直したい。昇順にしたい","out":"_データフレーム_.sort_values(by=[_列名_, _列名_], ascending = True)"}
+{"in":"グローバル変数の一覧を求めたい","out":"globals()"}
+{"in":"<option>青緑色を使用したい","out":"color = 'turquoise'"}
+{"in":"配列の列ごとの標準偏差を求めたい","out":"np.std(_配列_, axis=0)"}
+{"in":"整数までの奇整数列を求めたい","out":"list(range(1, _整数_, 2))"}
+{"in":"列名の偏差値を求める","out":"50 + 10 * scipy.stats.zscore(_データフレーム_[_列名_])"}
+{"in":"辞書に項目名が存在したいか知りたい","out":"_キー_ in _辞書_"}
+{"in":"配列の長さ整数のコンビネーションをループしたい","out":"for pairs in itertools.combinations(_配列_, _整数_):\n    print(pairs)"}
+{"in":"折れ線グラフでデータ列をプロットしたい。線の種類は一点鎖線にしたい","out":"plt.plot(_データ列_, _データ列_, linestyle=\"dashbot\")"}
+{"in":"の双曲線正弦を求めたい","out":"math.sinh(_結果_)  # 単位はラジアン"}
+{"in":"option: グラフの種類を実線にセットしたい","out":"linestyle = \"solid\""}
+{"in":"グラフを表示したい","out":"plt.show()"}
+{"in":"nまでの奇整数リストが欲しい","out":"list(range(1, n_, 2))"}
+{"in":"列名と列名をグラフにしたい","out":"plt.plot(_列名_, _列名_)\nplt.title('(タイトル)')\nplt.show()"}
+{"in":"双方向キューの順序を右に輪番で回したい","out":"_両端キュー_.rotate(1)"}
+{"in":"標準出力が知りたい","out":"sys.stdout"}
+{"in":"配列の行ごとの平均を求めたい","out":"np.mean(_配列_, axis=1)"}
+{"in":"コマンドラインを列挙したい","out":"sys.argv"}
+{"in":"リストと列名をラインに描画したい","out":"plt.plot(_リスト_, _データ列_)"}
+{"in":"ブースティングで回帰分析をしたい","out":"model = sklearn.ensemble.AdaBoostRegressor(random_state=0, n_estimators=100)\nmodel.fit(説明変数, 目的変数)"}
+{"in":"デックは空でないか調べたい","out":"len(_両端キュー_) != 0"}
+{"in":"配列をフラット化したい","out":"_配列_.flatten()"}
+{"in":"<option>ライムグリーン色を用いたい","out":"color = 'limegreen'"}
+{"in":"オブジェクトのバイトサイズが求めたい","out":"sys.getsizeof(オブジェクト)"}
+{"in":"文字列中の文字列を新しい文字列に置換したい","out":"_文字列_.replace(_文字列_, 置換後の文字列)"}
+{"in":"結果はバイト列か調べたい","out":"isinstance(_結果_, bytes)"}
+{"in":"データフレームからデータ行ランダムにを取り出したい","out":"_データフレーム_.sample(行数)"}
+{"in":"文字列が全て数値か知りたい","out":"_文字列_.isnumeric()"}
+{"in":"タプルのm番目からm番目までの部分","out":"_タプル_[m_:m_]"}
+{"in":"折れ線グラフを半透明にしたい","out":"plt.plot(_データ列_, _データ列_, alpha=0.5)"}
+{"in":"リストのn番目からn番目までの部分を取り出したい","out":"_リスト_[n_:n_]"}
+{"in":"option: ボックスチャートを横方向にしたい","out":"vert = False"}
+{"in":"縦方向の棒グラフを積み上げにしたい","out":"plt.bar(ラベル列, データ列, bottom=_データ列_, color='#800080')"}
+{"in":"<option>ねずみ色を使用したい","out":"color = 'gray'"}
+{"in":"有理数がしりたい","out":"分子, 分母 = 1, 2\nfractions.Fraction(分子, 分母)"}
+{"in":"リストの尖りを求めたい","out":"scipy.stats.kurtosis(_リスト_, bias=False)"}
+{"in":"結果のポインタを調べたい","out":"id(_結果_)"}
+{"in":"棒グラフをねずみにしたい","out":"plt.bar(_データ列_, _データ列_, color='gray')"}
+{"in":"データフレームとしてCSVファイルを読みたい。どの列もインデックスにしない","out":"df = pd.read_csv(_CSVファイル_, sep=',', index_col=None)"}
+{"in":"複数の列名をひとつの箱髭図にしたい","out":"plt.boxplot([_データ列_, _データ列_], labels=['(解説)', '(解説2)'])"}
+{"in":"リストとリストの直積がリストとして欲しい","out":"list(itertools.product(_リスト_, _リスト_))"}
+{"in":"nからn2までのstepごとによるスライスが欲しい","out":"slice(_整数_, _整数_, step)"}
+{"in":"sをfに書き込む","out":"s = ''\nf.write(s)"}
+{"in":"順に全ての英数字を処理したい","out":"for c in string.ascii_uppercase + string.digits:\n    print(c)"}
+{"in":"リストにリストを続けたリストがしりたい","out":"itertools.chain(_リスト_, _リスト_)"}
+{"in":"実数の整数分の一を計算したい","out":"_実数_ \/ _整数_"}
+{"in":"option: 箱髭図に平均を加えたい","out":"showmeans = False"}
+{"in":"<option>マーカーの色は藍","out":"markerfacecolor = \"#165e83\""}
+{"in":"<option>藍色を使用したい","out":"color = \"#165e83\""}
+{"in":"数値を整数で割った剰余を求めたい","out":"math.remainder(_数値_, _整数_)"}
+{"in":"改行で文字列が開始するか知りたい","out":"_文字列_.startswith(\"\\n\")"}
+{"in":"列名を標準化する","out":"scipy.stats.zscore(_データフレーム_[_列名_])"}
+{"in":"データフレームの整数行目以降を新しく表にしたい","out":"_データフレーム_[_整数_:]"}
+{"in":"<option>色は淡い茶色","out":"color = 'tan'"}
+{"in":"数列の合計値を求めたい","out":"sum(数列)"}
+{"in":"イテレータの長さ整数の重複組み合わせが欲しい","out":"itertools.combinations_with_replacement(_イテレータ_, _整数_)"}
+{"in":"CSVファイルでデータフレームを出力したい。文字コードは文字列","out":"_データフレーム_.to_csv(_CSVファイル_, sep=',', encoding=_文字列_)"}
+{"in":"グラフのタイトルを設定したい","out":"plt.title('(グラフのタイトル)')"}
+{"in":"列名を垂直棒グラフとして可視化したい","out":"plt.bar(ラベル列, _データ列_)  # ラベル列と_データ列_は同じサイズ"}
+{"in":"文字列の両端から空白を除きたい","out":"_文字列_.strip(\" \")"}
+{"in":"x座標の目盛を文字列に変更したい","out":"plt.xticks([0, 60, 90], ['不可', '可', '秀'])"}
+{"in":"option: Yモードを用いる","out":"mode = _X_"}
+{"in":"Pythonパスにディレクトリを追加したい","out":"sys.path.append(ディレクトリ名)"}
+{"in":"水色でプリントできる文字列にしたい","out":"f'\\033[36m{_整数_}\\033[0m'"}
+{"in":"xの小数点以下整数桁まで出力したい","out":"_整数_ = ':.3f'\nprint(_整数_.format(x))"}
+{"in":"横棒グラフをホットピンクにしたい","out":"plt.bar(_データ列_, _データ列_, color='hotpink')"}
+{"in":"整数は1もしくは2かどうか","out":"_整数_ == 1 or _整数_ == 2"}
+{"in":"イテラブルの推移を青い点線で書きたい","out":"plt.plot(_データ列_, _データ列_, linestyle=\"dotted\", color=\"b\")"}
+{"in":"二つ並べて柱状図を描きたい","out":"plt.hist([データ列, データ列], color=['b', 'r'])"}
+{"in":"整数が3の倍数かどうか","out":"_整数_ % 3 == 0"}
+{"in":"2次元リストの転置行列を計算したい","out":"[list(x) for x in list(zip(*_リスト_))]"}
+{"in":"最初のオブジェクトを双方向キューから取り除きたい","out":"_両端キュー_.remove(要素)"}
+{"in":"ロバストな回帰分析の準備をしたい","out":"model = sklearn.linear_model.HuberRegressor()\nmodel.fit(説明変数, 目的変数)"}
+{"in":"データフレームから説明変数を選びたい","out":"説明変数 = _データフレーム_[[_列名_, _列名_]]"}
+{"in":"CSVファイルをヘッダを指定せず}読みたい","out":"df = pd.read_csv(_CSVファイル_, sep=',', header=None)"}
+{"in":"nからnまでのスライスを知りたい","out":"slice(n_, n_)"}
+{"in":"整数を整数除算したい","out":"_整数_ \/\/ _整数_"}
+{"in":"列名が相関係数を求めたい","out":"scipy.stats.pearsonr(_データフレーム_[_列名_], _データフレーム_[_列名_])"}
+{"in":"列名とリストをラインにしたい","out":"plt.plot(_データ列_, _リスト_)"}
+{"in":"数値が無限大か知りたい","out":"math.isinf(_数値_)"}
+{"in":"変数のイテレータを用いたい","out":"iter(_変数_)"}
+{"in":"文字列の英大文字と小文字を交換したい","out":"_文字列_.swapcase()"}
+{"in":"配列の列ごとの最大値を知りたい","out":"np.max(_配列_, axis=0)"}
+{"in":"列名の年度を使いたい","out":"_データフレーム_[_列名_].dt.year"}
+{"in":"垂直棒グラフを描画してセンタリングしたい","out":"plt.bar(ラベル列, データ列, align='center')"}
+{"in":"行列の列ごとの最小を算出したい","out":"np.min(_行列_, axis=0)"}
+{"in":"列名の歪度","out":"_データフレーム_[_列名_].kurt()"}
+{"in":"英数字が文字列中に含まれるか調べたい","out":"any(c.isalnum() for c in _文字列_)"}
+{"in":"棒グラフを黄色にしたい","out":"plt.bar(_データ列_, _データ列_, color='yellow')"}
+{"in":"<option>シアン色を用いたい","out":"color = 'cyan'"}
+{"in":"ベクトルの累積和を計算したい","out":"np.cumsum(_配列_)"}
+{"in":"データフレームの標本標準偏差を確認したい","out":"_データフレーム_.std(ddof=1)"}
+{"in":"列名をタイムスタンプ型に変換しインデックスにしたい","out":"_データフレーム_.index = pd.DatetimeIndex(pd.to_datetime(_データフレーム_[_列名_]))"}
+{"in":"itertoolsモジュールをインポートしたい","out":"import itertools"}
+{"in":"文字列からタブを除きたい","out":"_文字列_.replace(\"\\t\", '')"}
+{"in":"結果を黄色化したい","out":"f'\\033[33m{_結果_}\\033[0m'"}
+{"in":"文字列中の改行を置換したい","out":"_文字列_.replace(\"\\n\", 置換後の文字列)"}
+{"in":"リストの各要素を関数によってフィルタしたリストを使いたい","out":"list(filter(_関数_, _リスト_))"}
+{"in":"リスト中の要素の位置をエラーなく調べたい","out":"_リスト_.index(_要素_) if _要素_ in _リスト_ else -1"}
+{"in":"改行せず整数をプリントしたい","out":"print(_整数_, end='')"}
+{"in":"リストのUNIX秒を全てタイムスタンプ化したい","out":"pd.to_datetime(_リスト_, unit='s', utc=True)"}
+{"in":"円グラフでリストの比率を描画したい","out":"plt.pie(_リスト_, startangle=90, autopct='%.2f%%')"}
+{"in":"列名の値が文字列の行だけのデータフレームを計算したい","out":"_データフレーム_[_データフレーム_[_列名_] == _文字列_]"}
+{"in":"データフレームのデータ型の一覧を算出したい","out":"_データフレーム_.dtypes"}
+{"in":"リストのm番目のを使いたい","out":"_リスト_[m_]"}
+{"in":"データフレームを二つの列名によってソートしたい","out":"_データフレーム_.sort_values(by=['列A', '列B'])"}
+{"in":"２つの配列を行方向に連結したい","out":"np.concatenate([_配列_, _配列_], axis=1)"}
+{"in":"整数が整数以下かどうか","out":"_整数_ <= _整数_"}
+{"in":"実行を正常止めたい","out":"sys.exit(0)"}
+{"in":"カラーバーを鉛直でプロットしたい","out":"plt.colorbar()"}
+{"in":"クラス分類をブースティングで行いたい","out":"model = sklearn.ensemble.AdaBoostClassifier(random_state=0, n_estimators=100)\nmodel.fit(説明変数, 目的変数)"}
+{"in":"リストをナンバリングしながら順に処理したい","out":"for i, value in enumerate(_リスト_):\n    print(i, value) #"}
+{"in":"CSVファイルをSJISで}読みたい","out":"df = pd.read_csv(_CSVファイル_, sep=',', encoding='shift_jis')"}
+{"in":"整数を２進数表記化したい","out":"bin(_整数_)"}
+{"in":"option: エラーがあるとき例外を発生させる","out":"errors = 'strict'"}
+{"in":"データフレームをソートして上の方整数件欲しい","out":"_データフレーム_.sort_values(by=_列名_, ascending=False).head(_整数_)"}
+{"in":"整数は有限か調べたい","out":"math.isfinite(_整数_)"}
+{"in":"プログラムをエラーとして止めたい","out":"sys.exit(1)"}
+{"in":"2次関数を描きたい","out":"x = np.linspace(-3, 3, 20)  # -3～3まで20刻みでxの値を生成\ny = x**2 - 1            # 2次関数\nplt.plot(x, y, label='$y=x^2+1$')      # 曲線を引く\nplt.show()              # グラフ表示"}
+{"in":"列名が整数より大きいだけのデータフレームが欲しい","out":"_データフレーム_[_データフレーム_[_列名_] > _整数_]"}
+{"in":"列名と列名を内部結合を行いたい","out":"pd.merge(_データフレーム_, _データフレーム_, left_on=_列名_, right_on=_列名_, how='inner')"}
+{"in":"横の補助線をグラフに付けたい","out":"plt.axhline(y=0, linestyle=\"dashed\")"}
+{"in":"青色の横棒グラフを描画する","out":"plt.barh(_データ列_, _データ列_, color=\"blue\")"}
+{"in":"範囲を指定して改行を文字列の右端から探したい","out":"_文字列_.find(\"\\n\", 開始位置, 終了位置)  # 見つからない場合は-1"}
+{"in":"データフレームのインデックスが整数の行を取り出したい","out":"_データフレーム_.loc[_整数_]"}
+{"in":"最初の文字列をデックから取り除きたい","out":"_両端キュー_.remove(_文字列_)"}
+{"in":"箱髭図で配列を描画したい","out":"plt.boxplot(_配列_)"}
+{"in":"棒グラフを白にしたい","out":"plt.bar(_データ列_, _データ列_, color='white')"}
+{"in":"モデルの残差をヒストグラムにしたい","out":"plt.hist(目的変数 - model.predict(説明変数))"}
+{"in":"整数を整数で割ったモジュロを計算したい","out":"_整数_ % _数値2_"}
+{"in":"文字列をタブで二つに区切ってて残りを求める","out":"_文字列_.partition(\"\\t\")[-1]"}
+{"in":"文字列を改行で区切って列挙したい","out":"_文字列_.split(\"\\n\")"}
+{"in":"<option>茶色を使用したい","out":"color = 'brown'"}
+{"in":"イテレータの重複組み合わせをループしたい","out":"for x, y in itertools.combinations_with_replacement(_イテレータ_, 2):\n    print(x, y)"}
+{"in":"エクセルファイルからシートの番号を指定してデータフレームをロードしたい","out":"df = pd.read_excel(_エクセルファイル_, sheet_name=[0, 2])"}
+{"in":"数値をゼロ埋めした文字列にしたい","out":"str(n).zfill(width=40)"}
+{"in":"オブジェクトにプロパティがあるか確認したい","out":"hasattr(オブジェクト, _プロパティ_)"}
+{"in":"実数に整数を加算したい","out":"_実数_ + _整数_"}
+{"in":"横棒グラフをオレンジレッド色にしたい","out":"plt.bar(_データ列_, _データ列_, color='orangered')"}
+{"in":"データ列のタイムゾーンを日本に設定したい","out":"_データ列_.tz_convert('Asia\/Tokyo')"}
+{"in":"カウンタのユニークな項目をリストとして得たい","out":"list(_カウンタ_)"}
+{"in":"option: 無視したいフッタをnに設定したい","out":"skipfooter = n"}
+{"in":"列名に文字列が存在しない行データを抽出したい","out":"_データフレーム_[~_データフレーム_[_列名_].str.contains(_文字列_)]"}
+{"in":"リストの統計量をまとめて知りたい","out":"pd.Series(_リスト_).describe()"}
+{"in":"数列の変化を黒い点線で描画したい","out":"plt.plot(_データ列_, _データ列_, linestyle=\"dotted\", color=\"k\")"}
+{"in":"fから1バイト読み込む","out":"f.read(1)"}
+{"in":"文字列を最後の改行で分割した場合の後半の文字列","out":"_文字列_.rpartition(\"\\n\")[-1]"}
+{"in":"リストを円グラフにしたい","out":"plt.pie(_リスト_, startangle=90)"}
+{"in":"スクリプトファイルの絶対パスを使用したい","out":"os.path.abspath(_file_)"}
+{"in":"横棒グラフをオリーブ色にしたい","out":"plt.bar(_データ列_, _データ列_, color='olive')"}
+{"in":"文字列の接尾辞からカンマを取りのきたい","out":"_文字列_.removesuffix(\",\")"}
+{"in":"空白で文字列を字句解析したい","out":"_文字列_.split()"}
+{"in":"文字列のプレフィックスがタブか調べたい","out":"_文字列_.startswith(\"\\t\")"}
+{"in":"データフレームの整数行目をドロップしてみたい","out":"_データフレーム_.drop(_整数_, axis=0)"}
+{"in":"配列のコンビネーションをリストにしたい","out":"list(itertools.combinations(_配列_, 2))"}
+{"in":"ひとつでも非アルファベットが文字列中に含まれるか判定したい","out":"any(not c.isalpha() for c in _文字列_)"}
+{"in":"filepathをYで書き込み用にオープンする","out":"open(filepath, mode='w', encoding=_X_)"}
+{"in":"黄色の棒グラフを描画したい","out":"plt.bar(_データ列_, _データ列_, color=\"yellow\")"}
+{"in":"タプルの整数番目のの要素を使用したい","out":"_タプル_[_整数_]"}
+{"in":"<option>黒を用いたい","out":"color = \"black\""}
+{"in":"文字列の後ろから空白を除きたい","out":"_文字列_.rstrip()"}
+{"in":"乱数を毎回異なるように初期化したい","out":"random.seed()"}
+{"in":"option: どのカラムもインデックスに設定しない","out":"index_col = None"}
+{"in":"スタッキングでクラス分類をしたい","out":"sklearn.ensemble.StackingClassifier()\nmodel.fit(説明変数, 目的変数)"}
+{"in":"真","out":"True"}
+{"in":"数値の近似有理数を調べたい。分母の最大値は整数","out":"fractions.Fraction(_数値_).limit_denominator(max_denominator=_整数_)"}
+{"in":"データフレームをCSVファイルに書き込みたい。インデックスはなし","out":"_データフレーム_.to_csv(_CSVファイル_, sep=',', index=None)"}
+{"in":"整数が整数2以下かどうか","out":"_整数_ <= _整数2_"}
+{"in":"同じ配列自身の全要素の組み合わせを調べたい","out":"itertools.product(_配列_, repeat=2)"}
+{"in":"コマンドラインフラグの状態が確認したい","out":"sys.flags"}
+{"in":"列名を全てタイムスタンプに変換したい","out":"pd.to_datetime(_データフレーム_[_列名_])"}
+{"in":"縦棒グラフを黄金にしたい","out":"plt.bar(_データ列_, _データ列_, color='gold')"}
+{"in":"TSVファイルからデータフレームを読みたい。ヘッダはなし","out":"df = pd.read_csv(_TSVファイル_, sep='\\t', header=None)"}
+{"in":"タプルをnから順番付けしたい","out":"enumerate(_タプル_, start=n)"}
+{"in":"行列のユニークな要素とその個数を知りたい","out":"u, counts = np.unique(_配列_, return_counts=True)"}
+{"in":"リストのそれぞれを関数でフィルタしたい","out":"filter(_関数_, _リスト_)"}
+{"in":"列名の値が文字列より少ない行だけのデータフレームを計算したい","out":"_データフレーム_[_データフレーム_[_列名_] < _文字列_]"}
+{"in":"データフレームからランダムに整数行を重複を認めてサンプリングしたい","out":"_データフレーム_.sample(_整数_, replace=True)"}
+{"in":"固有値分解をしたい","out":"model = sklearn.decomposition.PCA(n_components=n)"}
+{"in":"整数で割り算したい","out":"_数値_ \/\/ _数値2_"}
+{"in":"クラス分類をKNNでしたい","out":"model = sklearn.neighbors.KNeighborsClassifier(n_neighbors=5)\nmodel.fit(説明変数, 目的変数)"}
+{"in":"青色で表示できる文字列にしたい","out":"f'\\033[34m{_結果_}\\033[0m'"}
+{"in":"散布図を藤色にしたい","out":"plt.scatter(_データ列_, _データ列_, color=\"#afb4db\")"}
+{"in":"カウンタをイテラブルを出現回数して更新したい","out":"_カウンタ_.update(_イテラブル_)"}
+{"in":"<option>紺碧色を使用したい","out":"color = 'azure'"}
+{"in":"結果がネームドタプル型か判定したい","out":"hasattr(_結果_, '_asdict') and hasattr(_結果_, '_fields')"}
+{"in":"文字列の右端から空白を探したい","out":"_文字列_.rfind(\" \")  # 見つからない場合は-1"}
+{"in":"の双曲線余弦を求めたい","out":"math.cosh(_結果_)  # 単位はラジアン"}
+{"in":"標準入力が調べたい","out":"sys.stdin"}
+{"in":"文字列が全て変数名か求めたい","out":"_文字列_.isidentifier()"}
+{"in":"辞書で書式をフォーマットしたい","out":"書式文字列.format_map(_辞書_)"}
+{"in":"線形回帰モデルのバイアスを見る","out":"model.intercept_"}
+{"in":"1行だけ列を外したデータフレームを用いたい","out":"_データフレーム_.drop(_データフレーム_.columns[_整数_], axis=1)"}
+{"in":"分類モデルから目的変数を予測したい","out":"y_pred = model.predict(説明変数)"}
+{"in":"<option>マーカーの色は山吹","out":"markerfacecolor = \"#f8b400\""}
+{"in":"実測値をモデルの予測値と対比させる","out":"pd.DataFrame({'実測': 目的変数, '予測': model.predict(説明変数)})"}
+{"in":"符号付きで整数をバイナリに変換したい","out":"_整数_.to_bytes((_整数_.bit_length() + 7) \/\/ 8, byteorder='big', signed=True)"}
+{"in":"カンマで文字列が終わるか調べたい","out":"_文字列_.endswith(\",\")"}
+{"in":"イテレータ自身の長さ整数の順列を確認したい","out":"itertools.permutations(_イテレータ_, _整数_)"}
+{"in":"<option>色はアンバー","out":"color = \"#b97e54\""}
+{"in":"オブジェクトのプロパティを値に設定したい","out":"setattr(オブジェクト, _プロパティ_, 値)"}
+{"in":"<option>欠損値を前にしたい","out":"na_position = 'first'"}
+{"in":"既存の配列を元に全要素が0のベクトル","out":"np.zeros_like(_配列_)"}
+{"in":"文字列のn番目を知りたい","out":"_文字列_[n]"}
+{"in":"列名の要約統計量を求めたい","out":"_データフレーム_[_列名_].describe()"}
+{"in":"x軸の目盛りの表示値を変更したい","out":"plt.xticks(目盛りの値リスト)"}
+{"in":"ケンドール順位相関係数で列名と列名の相関行列を求めたい","out":"_データフレーム_[[_列名_, _列名_]].corr(method='kendall')"}
+{"in":"整数が正の整数か判定したい","out":"_整数_ > 0"}
+{"in":"タプルを関数を使ってソートしたい","out":"sorted(_タプル_, key=_関数_)"}
+{"in":"整数に実数を掛けたい","out":"_整数_ * _実数_"}
+{"in":"列名が文字列以下の行だけのデータフレームを求めたい","out":"_データフレーム_[_データフレーム_[_列名_] <= _文字列_]"}
+{"in":"リストと列名を線グラフにしたい。説明を付けたい","out":"plt.plot(_リスト_, _データ列_, label='(説明)')"}
+{"in":"イテレータを関数で累積したイテレータを算出したい","out":"itertools.accumulate(_イテレータ_, operator.mul)"}
+{"in":"文字列を左寄せしたい","out":"_文字列_.ljust(width=40)"}
+{"in":"終了位置を指定して改行の位置を探したい","out":"_文字列_.find(\"\\n\", 0, 終了位置)  # 見つからない場合は-1"}
+{"in":"タプルをJSONにエンコードしたい","out":"json.dumps(_タプル_, ensure_ascii=False)"}
+{"in":"オブジェクトをユーザ向けの文字列に変換したい","out":"str(オブジェクト)"}
+{"in":"空白を別の文字列へ置換したい","out":"_文字列_.replace(\" \", 置換後の文字列)"}
+{"in":"データフレームの後ろが見たい","out":"_データフレーム_.tail()"}
+{"in":"y軸を対数目盛に変更したい","out":"plt.yscale(\"log\")"}
+{"in":"リスト中の要素のインデックスを計算したい","out":"_リスト_.index(_要素_)"}
+{"in":"option: 結果を区切り記号で使用したい","out":"sep = _結果_"}
+{"in":"データフレームの列名が整数に等しくない行データを抽出したい","out":"_データフレーム_[_データフレーム_[_列名_] != _整数_]"}
+{"in":"横棒グラフをスノーにしたい","out":"plt.bar(_データ列_, _データ列_, color='snow')"}
+{"in":"横棒グラフを青緑色にしたい","out":"plt.bar(_データ列_, _データ列_, color='teal')"}
+{"in":"部分的最小二乗回帰モデルを作成したい","out":"model = sklearn.cross_decomposition.PLSRegression(n_components=10)\nmodel.fit(説明変数, 目的変数)"}
+{"in":"カラムの最大幅をnに設定したい","out":"pd.set_option('max_colwidth', n)"}
+{"in":"<option>色はホットピンク","out":"color = 'hotpink'"}
+{"in":"データフレームをジョインしたい","out":"pd.merge(_データフレーム_, _データフレーム_, left_on=_列名_, right_on=_列名_)"}
+{"in":"<option>マーカーの色は黄","out":"markerfacecolor = \"yellow\""}
+{"in":"<option>マーカーの色はブルー","out":"markerfacecolor = 'blue'"}
+{"in":"タプルをJSONフォーマットでファイル名に保存したい","out":"with open(ファイル名, 'w') as f:\n    json.dump(_タプル_, f, ensure_ascii=False)"}
+{"in":"変数名を項目名として辞書を作りたい","out":"dict(name='kogi', age=6)"}
+{"in":"<option>データ型として整数を使う","out":"dtype = np.int"}
+{"in":"整数の指数部を確認したい","out":"math.frexp(_整数_)[1]"}
+{"in":"ベクトルの要素ごとの積を求めたい","out":"np.multiply(_配列_, _配列_)"}
+{"in":"上限指定をした配列の算術平均","out":"scipy.stats.tmean(_配列_, limits=(_下限値_, _上限値_), inclusive=(True, True))"}
+{"in":"横棒グラフを描画して棒の幅を調整したい","out":"plt.barh(ラベル列, データ列, width=0.5)"}
+{"in":"データフレームをシート名を指定してエクセルファイルファイルからロードしたい","out":"df = pd.read_excel(_エクセルファイル_, sheet_name=['A', 'B'])"}
+{"in":"文字列が大文字か判定したい","out":"_文字列_.isupper()"}
+{"in":"option: 白色を使う","out":"color = \"white\""}
+{"in":"リストの最も小さい値を算出したい","out":"min(_リスト_)"}
+{"in":"タプルをn倍したい","out":"_タプル_ * n_"}
+{"in":"文字列の先頭から改行を取り除きたい","out":"_文字列_.lstrip(\"\\n\")"}
+{"in":"デフォルトのエンコーディングを確めたい","out":"sys.getdefaultencoding()"}
+{"in":"逆双曲線正接がほしい","out":"math.atanh(_数値_)"}
+{"in":"実数が整数以上かどうか","out":"_実数_ >= _整数_"}
+{"in":"環境のエンディアンが調べたい","out":"sys.byteorder"}
+{"in":"<option>桜色を使用したい","out":"color = \"#feeeed\""}
+{"in":"最後のカンマで文字列を二分して最初の方を使う","out":"_文字列_.rpartition(\",\")[0]"}
+{"in":"イテレータの重複コンビネーションリストとして欲しい","out":"list(itertools.combinations_with_replacement(_イテレータ_, 2))"}
+{"in":"カンマを置き替えたい","out":"_文字列_.replace(\",\", 置換後の文字列)"}
+{"in":"スタックを集合に変換したい","out":"set(_両端キュー_)"}
+{"in":"文字列の後半から文字の位置を探したい","out":"_文字列_.find(_文字_, 開始位置)  # 見つからない場合は-1"}
+{"in":"行列の要素ごとの最小公倍数を計算したい","out":"np.lcm(_配列_, _配列_)"}
+{"in":"配列をリストから作りたい","out":"np.array(_リスト_)"}
+{"in":"x座標だけグリッド線を付けたい","out":"plt.grid(axis='x')"}
+{"in":"列名の標準誤差を計算したい","out":"scipy.stats.sem(_データフレーム_[_列名_])"}
+{"in":"アンサンブル学習で回帰分析を行いたい","out":"sklearn.ensemble.VotingRegressor()\nmodel.fit(説明変数, 目的変数)"}
+{"in":"option: 欠損値を含めない","out":"dropna = True"}
+{"in":"横棒グラフを淡い茶色にしたい","out":"plt.bar(_データ列_, _データ列_, color='tan')"}
+{"in":"全要素を初期値で初期化した行列を作成したい","out":"np.full((行数, 列数), 初期値, dtype=np.int)"}
+{"in":"辞書の全項目を空にしたい","out":"_辞書_.clear()"}
+{"in":"横棒グラフをアジュール色にしたい","out":"plt.bar(_データ列_, _データ列_, color='azure')"}
+{"in":"文字列の指定された位置より前に文字が含まれるか判定したい","out":"_文字列_.find(_文字_, 0, 終了位置) != -1"}
+{"in":"文字列を文字列で区切って整数リストに変換したい","out":"list(map(int, _文字列_.split(_文字列_)))"}
+{"in":"の双曲線余弦を求めたい","out":"math.cosh(_整数_)  # 単位はラジアン"}
+{"in":"線グラフを描画したい","out":"plt.plot(_データ列_, _データ列_)"}
+{"in":"行列の列ごとの標準偏差を計算したい","out":"np.std(_行列_, axis=0)"}
+{"in":"option: 読みたい行番号をnamesで指定したい","out":"usecols = names"}
+{"in":"データフレームの列名の一覧を知りたい","out":"_データフレーム_.columns"}
+{"in":"データフレームを行ごとで辞書に変換したい","out":"_データフレーム_.to_dict(orient='records')"}
+{"in":"<option>ミッドナイトブルー色を使用したい","out":"color = 'midnightblue'"}
+{"in":"データフレームの相関行列をで計算したい","out":"_データフレーム_.corr(method='kendall')"}
+{"in":"リストを日付データに変換したい","out":"pd.to_datetime(_リスト_)"}
+{"in":"2進対数が計算したい","out":"math.log2(_整数_)"}
+{"in":"実数は実数もしくは実数か求めたい","out":"_実数_ in (_実数_, _実数_)"}
+{"in":"辞書でタプルをカウントしたい","out":"_辞書_[_タプル_] = _辞書_.get(_タプル_,0) + 1"}
+{"in":"文字列中に日本語が含まれるか算出したい","out":"re.search('[あ-んア-ン\\u4E00-\\u9FD0]', _文字列_)"}
+{"in":"棒グラフとしてリストを可視化したい","out":"plt.bar(ラベル列, _リスト_)  # ラベル列と_リスト_は同じサイズ"}
+{"in":"カンマを文字列の左端から探したい","out":"_文字列_.find(\",\")"}
+{"in":"列名でデータフレームとデータフレームをジョインしたい","out":"pd.merge(_データフレーム_, _データフレーム_, on=_列名_)"}
+{"in":"列名をダミー変数化したい","out":"pd.get_dummies(_データフレーム_[_列名_])"}
+{"in":"データフレームのカラムとリストをラインにしたい","out":"plt.plot(df['_列名_'], _リスト_)"}
+{"in":"列名のカテゴリ毎の分散を計算したい","out":"_データフレーム_.groupby(_列名_).var()"}
+{"in":"改行で文字列が終わるか判定したい","out":"_文字列_.endswith(\"\\n\")"}
+{"in":"整数が無限大か知りたい","out":"math.isinf(_整数_)"}
+{"in":"回帰木分析を行いたい","out":"model = sklearn.tree.DecisionTreeRegressor()"}
+{"in":"データ列の曜日数を計算したい","out":"_データ列_.dt.dayofweek"}
+{"in":"配列のユニークな要素とそのインデックスを求めたい","out":"u, indices = np.unique(_配列_, return_index=True)"}
+{"in":"リストの四分位を可視化したい","out":"plt.boxplot(_リスト_)"}
+{"in":"option: 文字コードをYに設定する","out":"encoding = _X_"}
+{"in":"太字にしたい","out":"f'\\033[1m{_整数_}\\033[0m'"}
+{"in":"引き算したい","out":"_数値_ - _数値2_"}
+{"in":"イテラブルの値のみ表示したい","out":"print(*_イテラブル_)"}
+{"in":"標準出力を即時表示したい","out":"sys.stdout.flush()"}
+{"in":"列名を箱ひげ図でプロットしたい","out":"plt.boxplot(_データ列_)"}
+{"in":"<option>マーカーは白色","out":"markerfacecolor = \"white\""}
+{"in":"行列の行ごとの最小を計算したい","out":"np.min(_行列_, axis=1)"}
+{"in":"データフレームをグループ化しあるカラムに対し列名を求めたい","out":"_データフレーム_.groupby('列A')['列B']._集約_"}
+{"in":"行列の行を選択したい","out":"_配列_[行番号]"}
+{"in":"平方根が計算したい","out":"math.sqrt(_数値_)"}
+{"in":"<option>真紅色を使用したい","out":"color = 'crimson'"}
+{"in":"乱数生成系列を固定したい","out":"random.seed(42)"}
+{"in":"２進数として文字列を整数にしたい","out":"int(_文字列_, 2)"}
+{"in":"論理値型のゼロ埋めされた配列を初期化したい","out":"np.zeros(要素数, dtype=bool)"}
+{"in":"データ列の関係性を作図したい","out":"plt.scatter(_データ列_, _データ列_)"}
+{"in":"２つの結果が等しいか求めたい","out":"_結果_ == _オブジェクト2_"}
+{"in":"<option>緑を用いたい","out":"color = \"green\""}
+{"in":"辞書の項目名を文字列に変更したい","out":"_辞書_[_キー_] = _文字列_"}
+{"in":"オブジェクトが文字列か調べたい","out":"isinstance(オブジェクト, str)"}
+{"in":"回帰木の重要度をグラフにしたい","out":"plt.barh(X.columns, model.feature_importances_)"}
+{"in":"実数の和を計算したい","out":"_実数_ + _数値2_"}
+{"in":"最初の改行で文字列を二分したい","out":"_文字列_.partition(\"\\n\")"}
+{"in":"文字列の順をランダムにランダムに入れ替えたい","out":"''.join(random.sample(_文字列_, len(_文字列_)))"}
+{"in":"再帰が何回までできるか","out":"sys.getrecursionlimit()"}
+{"in":"<option>マーカーは空色","out":"markerfacecolor = 'skyblue'"}
+{"in":"整数は整数2の倍数でないか知りたい","out":"_整数_ % _整数2_ != 0"}
+{"in":"逆正弦が計算したい","out":"math.asin(_数値_)"}
+{"in":"無限に文字列が続く列を求めたい","out":"itertools.repeat(_文字列_)"}
+{"in":"決定木を表示したい","out":"sklearn.tree.plot_tree(model, feature_names=X.columns, filled=True)"}
+{"in":"データ列の散布図を描画したい。マーカーを大きくしたい","out":"plt.scatter(_データ列_, _データ列_, s=5)  # sはサイズ"}
+{"in":"行列の列ごとの合計を算出したい","out":"np.sum(_行列_, axis=0)"}
+{"in":"データフレームをグループ化しあるカラムの統計量を算出したい","out":"_データフレーム_.groupby('列A').describe()['列B']"}
+{"in":"<option>マーカーは小豆色","out":"markerfacecolor = \"#98514b\""}
+{"in":"環境はYか判定したい","out":"sys.platform.startswith(_X_)"}
+{"in":"データフレームの列名を配列にしたい","out":"_データフレーム_[_列名_].values"}
+{"in":"配列と配列の全要素の組み合わせがしりたい","out":"itertools.product(_配列_, _配列_)"}
+{"in":"キュー中の文字列の数をカウントしたい","out":"_両端キュー_.count(_文字列_)"}
+{"in":"<option>マーカーは柿色","out":"markerfacecolor = \"#ed6d3d\""}
+{"in":"文字列を黒色で表示できる文字列に変換したい","out":"f'\\033[30m{_文字列_}\\033[0m'"}
+{"in":"option: どの行もヘッダにしない","out":"header = None"}
+{"in":"配列を関数で残したい","out":"itertools.takewhile(_関数_, _配列_)"}
+{"in":"タブ文字が用いたい","out":"\"\\t\""}
+{"in":"辞書を別の辞書を追加したい","out":"_辞書_.update(_辞書_)"}
+{"in":"文字で文字列を二つに区切ってて前の方を求める","out":"_文字列_.partition(_文字_)[0]"}
+{"in":"目的変数を回帰モデルの予測値と散布図に描く","out":"plt.scatter(目的変数, model.predict(説明変数))"}
+{"in":"縦棒グラフをイエローグリーンにしたい","out":"plt.bar(_データ列_, _データ列_, color='yellowgreen')"}
+{"in":"オブジェクトが集合か求めたい","out":"isinstance(オブジェクト, set)"}
+{"in":"整数から始まる無限整数リストを使いたい","out":"itertools.count(start=_整数_, step=1)"}
+{"in":"棒グラフを青にしたい","out":"plt.bar(_データ列_, _データ列_, color='blue')"}
+{"in":"<option>マゼンタ色を使いたい","out":"color = 'magenta'"}
+{"in":"辞書のエントリを繰り返し処理したい","out":"for value in _辞書_.values():\n    print(value)  # 具体的に"}
+{"in":"ベクトルを縦ベクトルに変形したい","out":"_配列_.reshape(-1, 1)"}
+{"in":"双方向キューの末尾の要素を用いたい","out":"_両端キュー_[-1]"}
+{"in":"文字列を緑色にしたい","out":"f'\\033[32m{_文字列_}\\033[0m'"}
+{"in":"タプルの長さを確認したい","out":"len(_タプル_)"}
+{"in":"改行せず２つの整数を表示したい","out":"print(_整数_, _整数_, end='')"}
+{"in":"辞書を階層化辞書化したい","out":"collections.ChainMap(_辞書_)"}
+{"in":"変数はYか調べたい","out":"isinstance(_変数_, _X_)"}
+{"in":"<option>マーカーの色は海","out":"markerfacecolor = 'aqua'"}
+{"in":"格子線の透明度を変更したい","out":"plt.grid(alpha=0.5)"}
+{"in":"リストを標準化する","out":"scipy.stats.zscore(_リスト_)"}
+{"in":"整数が整数回繰り返すイテレータを知りたい","out":"itertools.repeat(_整数_, _整数_)"}
+{"in":"リストから結果を取り除きたい","out":"_リスト_.remove(_結果_)"}
+{"in":"<option>山吹色を使いたい","out":"color = \"#f8b400\""}
+{"in":"有理数の天井数を調べたい","out":"math.ceil(_有理数_)"}
+{"in":"空のロバスト回帰モデルを作成したい","out":"model = sklearn.linear_model.RANSACRegressor(random_state=0)\nmodel.fit(説明変数, 目的変数)"}
+{"in":"折れ線グラフの色を青に設定したい","out":"plt.plot(_データ列_, _データ列_, color=\"blue\")"}
+{"in":"文字列中のカタカナをひらがな化したい","out":"''.join([chr(ord(ch) - 96) if ('ァ' <= ch <= 'ン') else ch for ch in _文字列_])"}
+{"in":"文字化けしないようにデータフレームをCSVファイル保存したい","out":"_データフレーム_.to_csv(_CSVファイル_, sep=',', encoding='utf_8_sig')"}
+{"in":"文字列中にひとつでも非英数字が含まれるか判定したい","out":"any(not c.isalnum() for c in _文字列_)"}
+{"in":"数値の双曲線余弦の逆数を求めたい","out":"math.acosh(_数値_)"}
+{"in":"条件を否定したい","out":"not _条件_"}
+{"in":"<option>桔梗色を使用したい","out":"color = \"#6a4c9c\""}
+{"in":"文字列としてリストを文字を用いて連結したい","out":"_文字_.join(map(str, _リスト_))"}
+{"in":"スクリプトファイルと同じディレクトリのfilepathのパスを計算したい","out":"os.path.join(os.path.dirname(os.path.abspath(_file_)), filepath)"}
+{"in":"リストの長さ整数の組み合わせを繰り返したい","out":"for pairs in itertools.combinations(_リスト_, _整数_):\n    print(pairs)"}
+{"in":"結果のルートを求めたい","out":"math.sqrt(_結果_)"}
+{"in":"文字列の指定した範囲位置の間に文字列が含まれるか確認したい","out":"_文字列_.find(_文字列_, 開始位置, 終了位置) != -1"}
+{"in":"符号なし８ビット整数型のゼロ埋めした行列を作成したい","out":"np.zeros(要素数, dtype=np.uint8)"}
+{"in":"データフレームの列名が整数と同じ行データを取り出したい","out":"_データフレーム_[_データフレーム_[_列名_] == _整数_]"}
+{"in":"配列の行ごとの最大値を知りたい","out":"np.max(_配列_, axis=1)"}
+{"in":"グラフを用いる準備をしたい","out":"import matplotlib.pyplot as plt"}
+{"in":"リストを関数で選びたい","out":"itertools.takewhile(_関数_, _リスト_)"}
+{"in":"文字列の指定した位置以降にカンマが含まれるか調べたい","out":"_文字列_.find(\",\", 開始位置) != -1"}
+{"in":"縦棒グラフを石竹にしたい","out":"plt.bar(_データ列_, _データ列_, color='pink')"}
+{"in":"CSVファイルでヘッダなしでデータフレームを保存したい","out":"_データフレーム_.to_csv(_CSVファイル_, sep=',', header=None)"}
+{"in":"文字列としてリストをカンマで連結したい","out":"\",\".join(map(str, _リスト_))"}
+{"in":"データ列の月を算出したい","out":"_データ列_.dt.month"}
+{"in":"文字列の指定した区間位置の間に空白が含まれるか調べたい","out":"_文字列_.find(\" \", 開始位置, 終了位置) != -1"}
+{"in":"配列を円グラフにしたい","out":"plt.pie(_配列_, startangle=90)"}
+{"in":"列名の標本標準偏差を調べたい","out":"_データフレーム_[_列名_].std(ddof=1)"}
+{"in":"文字コードに相当したい文字を確認したい","out":"chr(_文字コード_)"}
+{"in":"カンマで文字列の開始位置以降が開始するか調べたい","out":"_文字列_.startswith(\",\", 開始位置)"}
+{"in":"最初のカンマで文字列を二つに区切ってて前半を求める","out":"_文字列_.partition(\",\")[0]"}
+{"in":"ヒストグラムの線種類を一点鎖線に設定したい","out":"plt.hist(データ列, linestyle=\"dashbot\")"}
+{"in":"辞書の内容を取り出し繰り返し処理したい","out":"for key, value in _辞書_.items():\n    print(key, value)  # 具体的に"}
+{"in":"データ列の秒を用いたい","out":"_データ列_.dt.second"}
+{"in":"データフレームのカラムをリネームしたい","out":"_データフレーム_.rename(columns={_列名_: _列名_, _列名_: _列名_})"}
+{"in":"整数に変換したい","out":"int(x)"}
+{"in":"新しい計数器をイテラブルから作りたい","out":"FIXME collections.Counter(_イテラブル_)"}
+{"in":"実数引く整数を計算したい","out":"_実数_ - _整数_"}
+{"in":"列名の日を用いたい","out":"_データフレーム_[_列名_].dt.day"}
+{"in":"英字の全ての文字セットを調べたい","out":"list(string.ascii_letters)"}
+{"in":"<option>色はひまわり","out":"color = \"#ffc20e\""}
+{"in":"キューの最大長","out":"_両端キュー_.maxlen"}
+{"in":"option: 線の種類を一点鎖線にセットしたい","out":"linestyle = \"dashbot\""}
+{"in":"カレントワーキングディレクトリがみたい","out":"os.getcwd()"}
+{"in":"変数の属性の値を設定したい","out":"setattr(_変数_, _プロパティ_, 値)"}
+{"in":"ソートして結果をJSONフォーマットにエンコードしたい","out":"json.dumps(_結果_, ensure_ascii=False, sort_keys=True)"}
+{"in":"リストの末尾のn要素を除きたい","out":"_リスト_[:-n_]"}
+{"in":"多次元データを特異値分解で整数次元に次元削減したい","out":"sklearn.decomposition.TruncatedSVD(n_components=_整数_).fit_transform(多次元データ)"}
+{"in":"文字列から接尾辞を取りのきたい","out":"_文字列_.removeprefix(_文字列または文字_)"}
+{"in":"２つの整数のビット和を求めたい","out":"_整数_ | _整数2_"}
+{"in":"整数と整数のnCkが計算したい","out":"math.comb(_整数_, _整数_)"}
+{"in":"データフレームをソートして新しいインデックスを振り直したい","out":"_データフレーム_.sort_values(by=_列名_).reset_index()"}
+{"in":"<option>色はチャコールグレイ","out":"color = \"#4c444d\""}
+{"in":"数値の指数部を使いたい","out":"math.frexp(_数値_)[1]"}
+{"in":"列名と列名と列名だけのデータフレームを用いたい","out":"_データフレーム_[[_列名_, _列名_, _列名_]]"}
+{"in":"<option>色はオレンジ","out":"color = 'orange'"}
+{"in":"乱数で要素を埋めた行列","out":"np.random.random((行数, 列数))"}
+{"in":"文字列のある区間位置の間にカンマが含まれるか調べたい","out":"_文字列_.find(\",\", 開始位置, 終了位置) != -1"}
+{"in":"<option>色は黄","out":"color = 'yellow'"}
+{"in":"オブジェクトのイテレータを算出したい","out":"iter(オブジェクト)"}
+{"in":"タプルのm番目のの値を用いたい","out":"_タプル_[m_]"}
+{"in":"<option>浅黄色を用いたい","out":"color = \"#ffcc33\""}
+{"in":"2つのリストから辞書を作りたい","out":"dict(zip(_リスト_, _リスト_))"}
+{"in":"filepathのファイル名がしりたい","out":"os.path.basename(filepath)"}
+{"in":"文字列の最後からタブを除去したい","out":"_文字列_.rstrip(\"\\t\")"}
+{"in":"変数の値を半分にしたい","out":"変数 \/= 2"}
+{"in":"横棒グラフをスカーレットにしたい","out":"plt.bar(_データ列_, _データ列_, color=\"#da523a\")"}
+{"in":"イテレータの長さ整数の組み合わせを算出したい","out":"itertools.combinations(_イテレータ_, _整数_)"}
+{"in":"要素が全て1の行列","out":"np.ones(要素数, dtype=np.int)"}
+{"in":"整数の差を求めたい","out":"_整数_ - _整数2_"}
+{"in":"文字列の接尾辞はタブか知りたい","out":"_文字列_.endswith(\"\\t\")"}
+{"in":"両端キューの先頭の要素がみたい","out":"_両端キュー_[0]"}
+{"in":"デックの整数番目に要素を差し込む","out":"_両端キュー_.insert(_整数_, 要素)"}
+{"in":"文字列中のタブを空白にしたい","out":"_文字列_.expandtabs(tabsize=n)"}
+{"in":"<option>マーカーの色はオレンジ","out":"markerfacecolor = 'orange'"}
+{"in":"変数の属性の値を計算したい","out":"getattr(_変数_, _プロパティ_)"}
+{"in":"2変数の一番小さい値","out":"max(x, y)"}
+{"in":"<option>マーカーの色は杏色","out":"markerfacecolor = \"#f4a466\""}
+{"in":"nまでのスライスを計算したい","out":"slice(n_)"}
+{"in":"白色でプリントできる文字列に変換したい","out":"f'\\033[37m{_文字列_}\\033[0m'"}
+{"in":"<option>マーカーの色は群青","out":"markerfacecolor = \"#465daa\""}
+{"in":"小数点以下文字列桁の文字列化したい","out":"_文字列_.format(x)"}
+{"in":"横棒グラフを琥珀にしたい","out":"plt.bar(_データ列_, _データ列_, color=\"#b97e54\")"}
+{"in":"水色でxを出力したい","out":"print(f'\\033[36m{x}\\033[0m')"}
+{"in":"縦棒グラフをブラック色にしたい","out":"plt.bar(_データ列_, _データ列_, color='black')"}
+{"in":"文字列と文字列は等しいか知りたい","out":"_文字列_ == _文字列_"}
+{"in":"<option>降順にしたい","out":"ascending = False"}
+{"in":"列名のメディアン","out":"_データフレーム_[_列名_].median()"}
+{"in":"データフレームの標本分散を確認したい","out":"_データフレーム_.var(ddof=0)"}
+{"in":"<option>青緑色を用いたい","out":"color = 'teal'"}
+{"in":"<option>マーカーの色は焦茶","out":"markerfacecolor = \"#6a4d32\""}
+{"in":"鉛直方向の一点鎖線をグラフに付けたい","out":"plt.axvline(x=0, linestyle=\"dashbot\")"}
+{"in":"散布図を山吹色にしたい","out":"plt.scatter(_データ列_, _データ列_, color=\"#f8b400\")"}
+{"in":"リストをパラメータとして書式を整形したい","out":"書式文字列.format(*_リスト_)"}
+{"in":"<option>乳白色を使用したい","out":"color = \"#fffef6\""}
+{"in":"データフレームの重複した行を表示したい","out":"_データフレーム_.duplicated()"}
+{"in":"クラス分類の真陽性を見る","out":"混同行列 = sklearn.metrics.confusion_matrix(正解データ列, 予測データ列)"}
+{"in":"アンダーライン付きで表示できる文字列に変換したい","out":"f'\\033[2m{_整数_}\\033[0m'"}
+{"in":"文字列が小文字か判定したい","out":"_文字列_.islower()"}
+{"in":"イテレータを関数で残したい","out":"itertools.takewhile(_関数_, _イテレータ_)"}
+{"in":"y軸の目盛りを文字列に変えたい","out":"plt.yticks([0, 60, 90], ['不可', '可', '秀'])"}
+{"in":"横棒グラフをサーモンピンク色にしたい","out":"plt.bar(_データ列_, _データ列_, color='salmon')"}
+{"in":"文字列を双方向キューの整数番目に挿入したい","out":"_両端キュー_.insert(_整数_, _文字列_)"}
+{"in":"円グラフを時計回りに描画したい","out":"plt.pie(データ列, startangle=90, counterclock=False)"}
+{"in":"２つの結果はほぼ等しいか判定したい","out":"math.isclose(_結果_, _結果_)"}
+{"in":"配列とリストを散布図にプロットしたい","out":"plt.scatter(_配列_, _リスト_)"}
+{"in":"3つの文字列を順に出力したい","out":"print(_文字列_, _文字列_, _文字列_)"}
+{"in":"画像ファイルとしてグラフを保存したい","out":"plt.savefig('file.png')"}
+{"in":"リストを文字列で文字列として一つの文字列にしたい","out":"_文字列_.join(map(str, _リスト_))"}
+{"in":"タプル中の要素が少なくとも一つ真か調べたい","out":"any(_タプル_)"}
+{"in":"結果を黒色でプリントできる文字列に変換したい","out":"f'\\033[30m{_結果_}\\033[0m'"}
+{"in":"文字列中にひとつでも非小文字が含まれるか判定したい","out":"any(not c.islower() for c in _文字列_)"}
+{"in":"左に双方向キューの順番を輪番で回したい","out":"_両端キュー_.rotate(-1)"}
+{"in":"結果の属性の値がしりたい","out":"getattr(_結果_, _プロパティ_)"}
+{"in":"TSVファイルにデータフレームをカラム名なしで出力したい","out":"_データフレーム_.to_csv(_TSVファイル_, sep='\\t', header=None)"}
+{"in":"<option>色はオフホワイト","out":"color = \"#fff9ee\""}
+{"in":"文字で文字列を最後から区切って列挙したい","out":"_文字列_.rsplit(_文字_)"}
+{"in":"ヒストグラムを破線で描画したい","out":"plt.hist(データ列, linestyle=\"dashed\")"}
+{"in":"データフレームのカラム名を全て置き替えたい","out":"_データフレーム_.columns = 列名のリスト"}
+{"in":"option: 線を細くしたい","out":"linewidth = 3.0  # 単位はポイント"}
+{"in":"文字列の最後から改行を探したい","out":"_文字列_.rfind(\"\\n\")  # 見つからない場合は-1"}
+{"in":"JSONファイルからJSONフォーマットのデータを読み込みたい","out":"with open(_JSONファイル_) as f:\n    data = json.load(f)"}
+{"in":"文字のASCIIコード","out":"ord(_文字_)"}
+{"in":"リストの変遷を青い一点鎖線で描画したい","out":"plt.plot(_データ列_, _データ列_, linestyle=\"dashbot\", color=\"b\")"}
+{"in":"分数を浮動小数点数化したい","out":"float(_有理数_)"}
+{"in":"列名によってデータフレームをソートしてNaNを先頭にしたい","out":"_データフレーム_.sort_values(by=_列名_, na_position='first')"}
+{"in":"最初のコマンドラインを確認したい","out":"sys.argv[1]"}
+{"in":"スタッキングで回帰分析を行いたい","out":"sklearn.ensemble.StackingRegressor()\nmodel.fit(説明変数, 目的変数)"}
+{"in":"長さnの数列を確認したい","out":"[0] * n_"}
+{"in":"option: 更新したい","out":"inplace = True"}
+{"in":"赤い破線で線を描画したい","out":"plt.plot(_データ列_, _データ列_, linestyle=\"dashed\", color=\"r\")"}
+{"in":"データフレームの標準偏差などを算出したい","out":"_データフレーム_.describe()"}
+{"in":"リストのm番目に文字列を挿入したい","out":"_リスト_.insert(m_, _文字列_)"}
+{"in":"deqの整数番目を使用したい","out":"_両端キュー_[_整数_]"}
+{"in":"文字列を反転したい","out":"_文字列_[::-1]"}
+{"in":"<option>空色を使用したい","out":"color = 'skyblue'"}
+{"in":"柱状図でデータフレームのカラムを作図したい","out":"plt.hist(df['_列名_'])"}
+{"in":"列名の標本分散を確認したい","out":"_データフレーム_[_列名_].var(ddof=0)"}
+{"in":"複数の結果を改行せずに表示したい","out":"print(_結果_, _結果_, end='')"}
+{"in":"横棒グラフをもえぎ色にしたい","out":"plt.bar(_データ列_, _データ列_, color=\"#a9d159\")"}
+{"in":"二次元リストを確認したい","out":"[[0] * 列数 for _ in range(行数)]"}
+{"in":"<option>濃いピンク色を用いたい","out":"color = 'deeppink'"}
+{"in":"最初のカラムを除いたデータフレームを調べたい","out":"_データフレーム_[_データフレーム_.columns[1:]]"}
+{"in":"列名と列名を全ジョインしたい","out":"pd.merge(_データフレーム_, _データフレーム_, left_on=_列名_, right_on=_列名_, how='outer')"}
+{"in":"辞書の項目名の一覧がみたい","out":"list(_辞書_.keys())"}
+{"in":"空の辞書がしりたい","out":"{}"}
+{"in":"カンマが文字列のある位置から先に含まれないか調べたい","out":"_文字列_.find(\",\", 開始位置) == -1"}
+{"in":"全角数字を半角にしたい","out":"_文字列_.translate(str.maketrans('０１２３４５６７８９', '0123456789'))"}
+{"in":"イテレータの長さ整数の組み合わせをループしたい","out":"for pairs in itertools.combinations(_イテレータ_, _整数_):\n    print(pairs)"}
+{"in":"列名によってデータフレームをグループ化してリストにしたい","out":"[(name, group_データフレーム_) for name, group_データフレーム_ in _データフレーム_.groupby(_列名_)]"}
+{"in":"文字列が文字列のある位置以前に含まれないか調べたい","out":"_文字列_.find(_文字列_, 0, 終了位置) == -1"}
+{"in":"<option>小豆色を使用したい","out":"color = \"#98514b\""}
+{"in":"配列の全順列をリストにしたい","out":"list(itertools.permutations(_配列_))"}
+{"in":"タプルを逆順にしたい","out":"_タプル_[::-1]"}
+{"in":"グリッドを破線にしたい","out":"plt.grid(linestyle=\"dashed\")"}
+{"in":"行列のシェイプを算出したい","out":"_行列_.shape"}
+{"in":"回帰分析をランダムフォレストで行いたい","out":"model = sklearn.ensemble.RandomForestRegressor(n_estimators=10)  # ランダム性\nmodel.fit(説明変数, 目的変数)"}
+{"in":"<option>色は薔薇","out":"color = \"#f0566e\""}
+{"in":"タプルが空か算出したい","out":"len(_タプル_) == 0"}
+{"in":"変数はリストか確認したい","out":"isinstance(_変数_, list)"}
+{"in":"データフレームのカラムとリストをラインにしたい。凡例をつけたい","out":"plt.plot(df['_列名_'], _リスト_, label='(説明)')"}
+{"in":"データ列の曜日名が知りたい","out":"_データ列_.dt.weekday_name"}
+{"in":"<option>ラピスラズリ色を用いたい","out":"color = \"#426ab3\""}
+{"in":"マゼンタにヒストグラムの色を設定したい","out":"plt.hist(_データ列_, color=\"magenta\")"}
+{"in":"非数値データをワン・ホットベクトル化したい","out":"sklearn.preprocessing.OneHotEncoder(sparse=False).fit_transform(データ列)"}
+{"in":"リストの組み合わせを用いたい","out":"itertools.combinations(_リスト_, 2)"}
+{"in":"タプルを反転したい","out":"reversed(_タプル_)"}
+{"in":"グリッドの線の種類を変更したい","out":"plt.grid(linestyle='--')"}
+{"in":"<option>鶯色を使いたい","out":"color = \"#918d40\""}
+{"in":"文字列の両端から改行を除きたい","out":"_文字列_.strip(\"\\n\")"}
+{"in":"JSONLファイルからJSONフォーマットのデータをロードしたい","out":"with open(_JSONLファイル_) as f:\n    ss = []\n    for line in f.readlines():\n        data = json.loads(line)\n        ss.append(data)"}
+{"in":"<option>マーカーの色はブラック","out":"markerfacecolor = 'black'"}
+{"in":"整数乱数を算出したい","out":"random.randint(最小値, 最大値)  # 範囲を指定"}
+{"in":"<option>赤色を使いたい","out":"color = 'red'"}
+{"in":"<option>黄緑色を使いたい","out":"color = 'greenyellow'"}
+{"in":"リストをフォーマットにしたがってdatetime64型に変換したい","out":"pd.to_datetime(_リスト_, format='%Y-%m-%d')"}
+{"in":"散布図をさくらにしたい","out":"plt.scatter(_データ列_, _データ列_, color=\"#feeeed\")"}
+{"in":"横棒グラフを珊瑚にしたい","out":"plt.bar(_データ列_, _データ列_, color='coral')"}
+{"in":"ハイパボリック・タンジェントがほしい","out":"math.tanh(_整数_)  # 単位はラジアン"}
+{"in":"リストのコンビネーションリストとして欲しい","out":"list(itertools.combinations(_リスト_, 2))"}
+{"in":"縦方向にデータフレームとデータフレームとデータフレームを一つにしたい","out":"pd.concat([_データフレーム_, _データフレーム_, _データフレーム_3], axis=0)"}
+{"in":"列名が正規表現にマッチしたい行データを抽出したい","out":"_データフレーム_[_データフレーム_[_列名_].str.match(正規表現)]"}
+{"in":"データフレームの列の比率を円グラフで作図したい","out":"plt.pie(df['_列名_'], startangle=90, autopct='%.2f%%')"}
+{"in":"列名の月がしりたい","out":"_データフレーム_[_列名_].dt.month"}
+{"in":"グラフの簡単な説明を表示したい","out":"plt.legend()"}
+{"in":"実数は一桁の数か判定したい","out":"0 <= _実数_ <= 9"}
+{"in":"カウンタを辞書化したい","out":"dict(_カウンタ_)"}
+{"in":"散布図の色を赤にしたい","out":"plt.scatter(_データ列_, _データ列_, color=\"red\")"}
+{"in":"整数のY乗を求めたい","out":"_整数_ ** _X_"}
+{"in":"fにxを文字列に変換して書き込む","out":"x = 0\nf.write(str(x))"}
+{"in":"numpyを入れる","out":"import numpy as np"}
+{"in":"格子の色を変更したい","out":"plt.grid(color='#800080')"}
+{"in":"xを緑色で表示したい","out":"print(f'\\033[32m{x}\\033[0m')"}
+{"in":"x座標を対数目盛に変更したい","out":"plt.xscale(\"log\")"}
+{"in":"結果をデバッグ向けの文字列にしたい","out":"repr(_結果_)"}
+{"in":"文字列の指定された位置以前に文字が含まれないか調べたい","out":"_文字列_.find(_文字_, 0, 終了位置) == -1"}
+{"in":"文字列の右端からカンマを探したい","out":"_文字列_.rfind(\",\")  # 見つからない場合は-1"}
+{"in":"柱状グラフを上限から下限までの区間でプロットしたい","out":"plt.hist(データ列, range=(start, end))"}
+{"in":"列名とリストを散布図にしたい","out":"plt.scatter(_データ列_, _リスト_)"}
+{"in":"水平な棒グラフを描画して下寄せしたい","out":"plt.barh(ラベル列, データ列, align='edge')"}
+{"in":"データフレームをふたつの列名でグループ化したい]","out":"_データフレーム_.groupby(by=[_列名_, _列名_])"}
+{"in":"行列の行列積を算出したい","out":"np.matmul(_行列_, _行列_)"}
+{"in":"データフレームのふたつのカラムを削除したい","out":"_データフレーム_.drop([_列名_, _列名_], axis=1, inplace=True)"}
+{"in":"リストの推移をラインで可視化したい","out":"plt.plot(range(len(_リスト_)), _リスト_)"}
+{"in":"寄与率を知りたい","out":"sklearn.metrics.r2_score(データ列, データ列)"}
+{"in":"棒グラフをグリーンイエロー色にしたい","out":"plt.bar(_データ列_, _データ列_, color='greenyellow')"}
+{"in":"整数を整数2で割って小数点以下を切り上げたい","out":"(_整数_ + _整数2_ - 1) \/\/ _整数2_"}
+{"in":"表示できるデータフレームの精度を設置したい","out":"pd.set_option('precision', n)"}
+{"in":"データフレームを表示したいときヘッダー行を左寄せに設定したい","out":"pd.set_option('colheader_justify', 'left')"}
+{"in":"インデックスでデータフレームを整列したい","out":"_データフレーム_.sort_index()"}
+{"in":"配列を平行棒グラフとして描画したい","out":"plt.barh(ラベル列, _配列_)  # ラベル列と_配列_は同じサイズ"}
+{"in":"<option>マーカーは緑色","out":"markerfacecolor = \"green\""}
+{"in":"<option>オレンジレッド色を用いたい","out":"color = 'orangered'"}
+{"in":"<option>色は撫子","out":"color = 'pink'"}
+{"in":"文字列をSJISでバイト列に変換したい","out":"_文字列_.encode(encoding='sjis', errors='ignore')"}
+{"in":"列名の変遷をラインで描画したい","out":"plt.plot(range(len(_データ列_)), _データ列_)"}
+{"in":"整数はリストに含まれないか調べたい","out":"_整数_ not in _リスト_"}
+{"in":"垂直棒グラフを描画して棒の幅を設定したい","out":"plt.bar(ラベル列, データ列, width=0.5)"}
+{"in":"数値の仮数部を調べたい","out":"math.frexp(_数値_)[0]"}
+{"in":"数値の符号を同じにしたい","out":"math.copysign(_数値_, _数値_)"}
+{"in":"データフレームの不偏分散を算出したい","out":"_データフレーム_.var(ddof=1)"}
+{"in":"整数は整数2よりも小さいかどうか","out":"_整数_ < _整数2_"}
+{"in":"文字列を最初の文字列で二つに区切ってて前半を使う","out":"_文字列_.partition(_文字列_)[0]"}
+{"in":"filepathからストリームをオープンしてfileとする","out":"file = open(filepath)"}
+{"in":"文字列の左端から改行を探したい","out":"_文字列_.find(\"\\n\")"}
+{"in":"ベクトルを変形したい","out":"_配列_.reshape(行数, 列数)"}
+{"in":"データフレームを一行ずつJSONファイルに書き込みたい","out":"_データフレーム_.to_json(_JSONLファイル_, force_ascii=False, orient='records', lines=True)"}
+{"in":"<option>トマト色を使用したい","out":"color = 'tomato'"}
+{"in":"タプルの各要素を|関数で変換したリストが知りたい","out":"list(map(_関数_, _タプル_))"}
+{"in":"タプルの最初を捨てたい","out":"_タプル_[1:]"}
+{"in":"双方向キューからポップしたい","out":"_両端キュー_.pop()"}
+{"in":"結果が無限大か知りたい","out":"math.isinf(_結果_)"}
+{"in":"mathモジュールをインポートしたい","out":"import math"}
+{"in":"JSON形式でリストをJSONファイルにダンプしたい","out":"with open(_JSONファイル_, 'w') as f:\n    json.dump(_リスト_, f, ensure_ascii=False)"}
+{"in":"黄色い実線でイテラブルの変化を描画したい","out":"plt.plot(_データ列_, _データ列_, linestyle=\"solid\", color=\"y\")"}
+{"in":"配列と配列をつなぎたい","out":"itertools.chain(_配列_, _配列_)"}
+{"in":"散布図を真紅にしたい","out":"plt.scatter(_データ列_, _データ列_, color=\"#b1063a\")"}
+{"in":"黄色のヒストグラムを描画したい","out":"plt.hist(_データ列_, color=\"yellow\")"}
+{"in":"文字列の平仮名を片仮名に変換したい","out":"''.join([chr(ord(ch) + 96) if ('ぁ' <= ch <= 'ん') else ch for ch in _文字列_])"}
+{"in":"列名がどの程度分散しているか確認したい","out":"_データフレーム_[_列名_].var()"}
+{"in":"データフレームがどの程度正規分布から歪んでいるか計算したい","out":"_データフレーム_.kurt()"}
+{"in":"リストの重複組み合わせリストとして欲しい","out":"list(itertools.combinations_with_replacement(_リスト_, 2))"}
+{"in":"データ列の折れ線グラフを描画したい。RGBで色を設定したい","out":"plt.plot(_データ列_, _データ列_, color='#808080')"}
+{"in":"<option>マーカーは灰色","out":"markerfacecolor = 'gray'"}
+{"in":"タブを文字列の末尾からエラーなく消したい","out":"_文字列_.removesuffix(\"\\t\")"}
+{"in":"x, yの複素数を算出する","out":"complex(x, y)"}
+{"in":"散布図の色を黒にしたい","out":"plt.scatter(_データ列_, _データ列_, color=\"black\")"}
+{"in":"n個の数値イテラブルがみたい","out":"range(n)"}
+{"in":"文字列を空白で右から区切りたい","out":"_文字列_.rsplit()"}
+{"in":"配列を出現回数してカウンタから引きたい","out":"_カウンタ_.subtract(_配列_)"}
+{"in":"文字列が列名においてある行データを取り出したい","out":"_データフレーム_[_データフレーム_[_列名_].str.contains(_文字列_)]"}
+{"in":"fを解放する","out":"f.close()"}
+{"in":"オブジェクトは呼び出し可能か計算したい","out":"callable(オブジェクト)"}
+{"in":"結果のラジアンを求めたい","out":"math.radians(_結果_)  # 単位は弧度法"}
+{"in":"配列の歪みを計算したい","out":"scipy.stats.skew(_配列_, bias=False)"}
+{"in":"文字列のプレフィックスは文字か確認したい","out":"_文字列_.startswith(_文字_)"}
+{"in":"<option>若草色を用いたい","out":"color = \"#abc900\""}
+{"in":"配列でマスクした配列を用いたい","out":"itertools.compress(_配列_, selectors=_配列_)"}
+{"in":"<option>青紫色を用いたい","out":"color = \"#6f51a1\""}
+{"in":"ネイピア数を調べたい","out":"math.e"}
+{"in":"カウンタの要素のカウントを得たい","out":"_カウンタ_[element]"}
+{"in":"文字列を黄色で表示できる文字列化したい","out":"f'\\033[33m{_文字列_}\\033[0m'"}
+{"in":"タプルをひとつ飛ばしで得る","out":"_タプル_[::2]"}
+{"in":"黄色でxを出力したい","out":"print(f'\\033[33m{x}\\033[0m')"}
+{"in":"整数はリストの要素か計算したい","out":"_整数_ in _リスト_"}
+{"in":"リストを|関数で変換したリストがしりたい","out":"list(map(_関数_, _リスト_))"}
+{"in":"2つのオブジェクトは同じ参照か確認したい","out":"オブジェクト is _オブジェクト2_"}
+{"in":"<option>色は葡萄","out":"color = \"#8d3043\""}
+{"in":"文字列の末尾から安全に文字を除去したい","out":"_文字列_.removesuffix(_文字_)"}
+{"in":"グラフの縦横の比率を等しくしたい","out":"plt.axis(\"equals\")"}
+{"in":"option: バイアスを計算しない","out":"fit_intercept = False"}
+{"in":"ヒストグラムを描画して半透明化にしたい","out":"plt.hist(_データ列_, alpha=0.5)"}
+{"in":"列名の平均が知りたい","out":"_データフレーム_[_列名_].mean()"}
+{"in":"空のロジスティック回帰モデルを作成したい","out":"model = sklearn.linear_model.LogisticRegression()"}
+{"in":"コマンドラインの一覧","out":"sys.argv[1:]"}
+{"in":"データフレームを複数の列名から並べたい。昇順にしたい","out":"_データフレーム_.sort_values(by=['列A', '列B'], ascending = True)"}
+{"in":"文字列ひとつのりストを調べたい","out":"[_文字列_]"}
+{"in":"文字列の左端から不要な空白を除きたい","out":"_文字列_.lstrip()"}
+{"in":"文字列からカンマを全て除きたい","out":"_文字列_.replace(\",\", '')"}
+{"in":"列名の値が整数より少ない行のみのデータフレームがしりたい","out":"_データフレーム_[_データフレーム_[_列名_] < _整数_]"}
+{"in":"カウンタの和集合演算したい","out":"_カウンタ_ | _カウンタ_"}
+{"in":"縦棒グラフを銀色にしたい","out":"plt.bar(_データ列_, _データ列_, color='silver')"}
+{"in":"辞書をコピーしたい","out":"dict(_辞書_)"}
+{"in":"文字列と文字列は大文字小文字を無視して等しいか調べたい","out":"_文字列_.casefold() == _文字列_.casefold()"}
+{"in":"文字列の開始位置以降が空白で開始するか知りたい","out":"_文字列_.startswith(\" \", 開始位置)"}
+{"in":"最大長長さの制限があるスタックを用いたい","out":"collections.deque(maxlen=最大長)"}
+{"in":"赤色で横棒グラフを描画する","out":"plt.barh(_データ列_, _データ列_, color=\"red\")"}
+{"in":"文字列を積極的に英小文字化したい","out":"_文字列_.casefold()"}
+{"in":"データフレームの行を一部新しく表にしたい","out":"_データフレーム_[開始行:終了行+1]"}
+{"in":"<option>データ型として３２ビット整数を使用する","out":"dtype = np.int32"}
+{"in":"小さい方からタプルの要素を並べたい","out":"sorted(_タプル_, reverse=False)"}
+{"in":"列名のみのデータフレームが知りたい","out":"_データフレーム_[[_列名_]]"}
+{"in":"配列の長さ整数の順列をリストにしたい","out":"list(itertools.permutations(_配列_, _整数_))"}
+{"in":"平均線付き箱髭図を描きたい","out":"plt.boxplot(データ列, meanline=True)"}
+{"in":"欠損値を含めて列名を集約したい]","out":"_データフレーム_.groupby(_列名_, dropna=False)"}
+{"in":"配列の行ごとの最小値を計算したい","out":"np.min(_配列_, axis=1)"}
+{"in":"タブで文字列の開始位置以降が開始するか知りたい","out":"_文字列_.startswith(\"\\t\", 開始位置)"}
+{"in":"外れ値を無視して列名の分散を知りたい","out":"scipy.stats.tvar(_データフレーム_[_列名_], limits=(_下限値_, _上限値_), inclusive=(True, True))"}
+{"in":"文字で文字列を区切って整数リストにしたい","out":"list(map(int, _文字列_.split(_文字_)))"}
+{"in":"<option>色は深緑色","out":"color = \"#004025\""}
+{"in":"リストの重複組み合わせをループしたい","out":"for x, y in itertools.combinations_with_replacement(_リスト_, 2):\n    print(x, y)"}
+{"in":"整数を実数で割ってその結果を切り捨てたい","out":"_整数_ \/\/ _実数_"}
+{"in":"<option>色は黄緑","out":"color = 'yellowgreen'"}
+{"in":"リストの要素をスワップしたい","out":"リスト[x], リスト[y] = リスト[y], リスト[x]"}
+{"in":"データフレームから整数行をランダムに取り出したい","out":"_データフレーム_.sample(_整数_)"}
+{"in":"相関係数でデータフレームの相関行列を算出したい","out":"_データフレーム_.corr(method='pearson')"}
+{"in":"文字列の左側から安全に文字を取り除きたい","out":"_文字列_.removeprefix(_文字_)"}
+{"in":"リストの整数番目から要素を得る","out":"_リスト_.pop(_整数_)"}
+{"in":"目盛線の太さを変更したい","out":"plt.grid(linewidth=3.0)"}
+{"in":"関数適用によってデータフレームをグループ化したい]","out":"_データフレーム_.groupby(by=関数)"}
+{"in":"辞書順で文字列が文字列より大きいか判定したい","out":"_文字列_ > _文字列_"}
+{"in":"辞書の値数を確認したい","out":"len(_辞書_)"}
+{"in":"散布図をシアン色で描画したい","out":"plt.scatter(_データ列_, _データ列_, color=\"cyan\")"}
+{"in":"行列の行ごとの標準偏差を計算したい","out":"np.std(_行列_, axis=1)"}
+{"in":"Yの下位25パーセントがしりたい","out":"_データフレームまたは列名_.quantile(0.75)"}
+{"in":"列名において重複があれば削除したい","out":"_データフレーム_.drop_duplicates(subset=_列名_, inplace=True)"}
+{"in":"赤色にしたい","out":"f'\\033[31m{_文字列_}\\033[0m'"}
+{"in":"ランダムに要素をリストから一つ選びたい","out":"random.choice(_リスト_)"}
+{"in":"deqのstart番目からend番目の部分要素を得たい","out":"FIXME collections.deque(itertools.islice(deq, start, end))"}
+{"in":"外れ値を除いたリストの分散を算出したい","out":"scipy.stats.tvar(_リスト_, limits=(_下限値_, _上限値_), inclusive=(True, True))"}
+{"in":"実数が一桁の整数か知りたい","out":"-9 <= _実数_ <= 9"}
+{"in":"<option>マーカーの色は黄金","out":"markerfacecolor = 'gold'"}
+{"in":"カウンタの下位をリストとして得たい","out":"_カウンタ_.most_common()[:-_整数_-1:-1]"}
+{"in":"n個の整数リストを算出したい","out":"list(range(n_))"}
+{"in":"filepathからディレクトリ名を見る","out":"os.path.dirname(filepath)"}
+{"in":"データを外れ値に頑健な標準化を行いたい","out":"sklearn.preprocessing.RobustScaler().fit_transform(データ)"}
+{"in":"辞書のキーに対応した値を算出したい","out":"_辞書_[_キー_]"}
+{"in":"JSONファイルにデータフレームを保存したい","out":"_データフレーム_.to_json(_JSONファイル_, force_ascii=False)"}
+{"in":"配列の調和平均を算出したい","out":"scipy.stats.hmean(_配列_)"}
+{"in":"横棒グラフを紫根色にしたい","out":"plt.bar(_データ列_, _データ列_, color=\"#411445\")"}
+{"in":"デック中の整数のインデックスを算出したい","out":"_両端キュー_.index(_整数_)"}
+{"in":"英大文字の全ての文字セットがみたい","out":"list(string.ascii_uppercase)"}
+{"in":"色名とカラーコードの対応表が知りたい","out":"matplotlib.colors.cnames"}
+{"in":"数値の双曲線正接が計算したい","out":"math.tanh(_数値_)  # 単位はラジアン"}
+{"in":"行列の各要素の最大公約数を求めたい","out":"np.gcd(_配列_, _配列_)"}
+{"in":"実数が奇数か調べたい","out":"_実数_ % 2 == 1"}
+{"in":"文字列の右端からカンマを取り除きたい","out":"_文字列_.rstrip(\",\")"}
+{"in":"列名のタイムゾーンを東京に設定したい","out":"_データフレーム_[_列名_].tz_convert('Asia\/Tokyo')"}
+{"in":"実数は整数より大きいかどうか","out":"_実数_ > _整数_"}
+{"in":"整数をバイト列化したい","out":"_整数_.to_bytes((_整数_.bit_length() + 7) \/\/ 8, byteorder='big')"}
+{"in":"option: シアン色を使う","out":"color = \"cyan\""}
+{"in":"文字列中に空白が含まれないか調べたい","out":"any(not c.isspace() for c in _文字列_)"}
+{"in":"リストの全順列をリストにしたい","out":"list(itertools.permutations(_リスト_))"}
+{"in":"バイト列からJSONフォーマットのデータを読みたい","out":"json.loads(_バイト列_.decode('unicode-escape'))"}
+{"in":"数値は有限か求めたい","out":"math.isfinite(_数値_)"}
+{"in":"同じイテレータの直積が知りたい","out":"itertools.product(_イテレータ_, repeat=2)"}
+{"in":"option: スキップしたい列番号をnamesで指定したい","out":"skiprows = names"}
+{"in":"グラフのy座標のキャプションを設定したい","out":"plt.ylabel('(y軸ラベル)')"}
+{"in":"option: 線種類を破線に変更したい","out":"linestyle = \"dashed\""}
+{"in":"ファイル名のセパレータ記号を計算したい","out":"os.sep"}
+{"in":"<option>象牙色を用いたい","out":"color = 'ivory'"}
+{"in":"リストの最後から値を抽出したい","out":"_リスト_.pop()"}
+{"in":"カンマの登場を範囲を指定して数えたい","out":"_文字列_.count(\",\", 開始位置, 終了位置)"}
+{"in":"グラフのy座標の目盛りを設定したい","out":"plt.yticks(np.arange(最小値, 最大値+1, 間隔))"}
+{"in":"xを赤色で出力したい","out":"print(f'\\033[31m{x}\\033[0m')"}
+{"in":"変数は文字列か知りたい","out":"isinstance(_変数_, str)"}
+{"in":"mまでの偶整数列を知りたい","out":"list(range(0, m_, 2))"}
+{"in":"リストのフィシャー流の尖度を知りたい","out":"scipy.stats.kurtosis(_リスト_, fisher=True, bias=False)"}
+{"in":"分子整数分母整数の有理数を求めたい","out":"fractions.Fraction(numerator=_整数_, denominator=_整数_)"}
+{"in":"二つの数値は近似値か調べたい","out":"math.isclose(_数値_, _数値_)"}
+{"in":"無限小を算出したい","out":"-math.inf"}
+{"in":"変数が論理値か計算したい","out":"isinstance(_変数_, bool)"}
+{"in":"列名が文字列以上の行だけのデータフレームを計算したい","out":"_データフレーム_[_データフレーム_[_列名_] >= _文字列_]"}
+{"in":"文字列から空白を取りのきたい","out":"_文字列_.replace(\" \", '')"}
+{"in":"変数がバイト列か計算したい","out":"isinstance(_変数_, bytes)"}
+{"in":"文字が文字列またはリストに含まれるか確認したい","out":"_文字_ in _文字列またはリスト_"}
+{"in":"リストを逆順にしたい","out":"reversed(_リスト_)"}
+{"in":"<option>杏色を用いたい","out":"color = \"#f4a466\""}
+{"in":"散布図を桔梗にしたい","out":"plt.scatter(_データ列_, _データ列_, color=\"#6a4c9c\")"}
+{"in":"３２ビット整数型のゼロ埋めしたベクトルを作成したい","out":"np.zeros(要素数, dtype=np.int32)"}
+{"in":"文字列はリストの要素か計算したい","out":"_文字列_ in _リスト_"}
+{"in":"十六進数として文字列を整数化したい","out":"int(_文字列_, 16)"}
+{"in":"リストから標本抽出したい","out":"random.sample(_リスト_, 標本個数)"}
+{"in":"補助目盛を有効にしたい","out":"plt.minorticks_on()"}
+{"in":"平均付き箱ヒゲ図を描きたい","out":"plt.boxplot(データ列, showmeans=True)"}
+{"in":"<option>マーカーの色は銀","out":"markerfacecolor = 'silver'"}
+{"in":"データ列の分を用いたい","out":"_データ列_.dt.minute"}
+{"in":"<option>マーカーは黄色","out":"markerfacecolor = \"#ffd400\""}
+{"in":"８ビット整数型の０で全要素を初期化した行列を初期化したい","out":"np.zeros(行数, 列数, dtype=np.int8)"}
+{"in":"整数の左シフトを求めたい","out":"_整数_ << n"}
+{"in":"リストの長さ整数の重複コンビネーションをループしたい","out":"for pairs in itertools.combinations_with_replacement(_リスト_, _整数_):\n    print(pairs)"}
+{"in":"結果が数か判定したい","out":"isinstance(_結果_, numbers.Number)"}
+{"in":"整数は実数で割り切れないか知りたい","out":"_整数_ % _実数_ != 0"}
+{"in":"fを全て読む","out":"f.read()"}
+{"in":"キューをクリアしたい","out":"_両端キュー_.clear()"}
+{"in":"点線にヒストグラムの線スタイルを設定したい","out":"plt.hist(データ列, linestyle=\"dotted\")"}
+{"in":"データフレームの標準偏差がみたい","out":"_データフレーム_.std()"}
+{"in":"終了位置を指定してカンマを探したい","out":"_文字列_.find(\",\", 0, 終了位置)  # 見つからない場合は-1"}
+{"in":"m×mの二次元リストが知りたい","out":"[[0] * m_ for _ in range(m_)]"}
+{"in":"２つの文字列をプリントしたい","out":"print(_文字列_, _文字列_)"}
+{"in":"リストの値が列名に含まれる行データを取り出したい","out":"_データフレーム_[_データフレーム_[_列名_].isin(_リスト_)]"}
+{"in":"結果のメモリビューを知りたい","out":"memoryview(_結果_)"}
+{"in":"文字は片仮名か確認したい","out":"('ァ' <= _文字_ <= 'ン')"}
+{"in":"インタプリタの実行ファイルの絶対パスを確めたい","out":"sys.executable"}
+{"in":"リストの個数を確認したい","out":"len(_リスト_)"}
+{"in":"<option>色はラベンダー","out":"color = 'lavender'"}
+{"in":"行列の行ごとの平均値を算出したい","out":"np.mean(_行列_, axis=1)"}
+{"in":"結果のサインがほしい","out":"math.sin(_結果_)  # 単位はラジアン"}
+{"in":"変数のハッシュ値知りたい","out":"hash(_変数_)"}
+{"in":"結果の自然対数が計算したい","out":"math.log(_結果_)"}
+{"in":"実数が実数もしくは実数もしくは実数に等しいか求めたい","out":"_実数_ in (_実数_, _実数_, _実数_)"}
+{"in":"文字が平仮名か知りたい","out":"('ぁ' <= _文字_ <= 'ん')"}
+{"in":"列名と列名において重複が除去したい","out":"_データフレーム_.drop_duplicates(subset=[_列名_, _列名_], inplace=True)"}
+{"in":"文字列中の改行の出現回数がしりたい","out":"_文字列_.count(\"\\n\")"}
+{"in":"ボックスチャートを横方向にしたい","out":"plt.boxplot(データ列, vert=False)"}
+{"in":"整数ひとつのタプルを調べたい","out":"(_整数_,)"}
+{"in":"結果がタプルの要素でないか算出したい","out":"_結果_ not in _タプル_"}
+{"in":"1行だけ標準入力から読む","out":"sys.stdin.readline()"}
+{"in":"filepathから拡張子なしのファイル名を使う","out":"os.path.splitext(os.path.basename(filepath))[0]"}
+{"in":"ひとつでも空白が文字列中に含まれるか確認したい","out":"any(c.isspace() for c in _文字列_)"}
+{"in":"ラジアンの角度がほしい","out":"math.degrees(_数値_)  # 単位はラジアン"}
+{"in":"データ列の日にちを確認したい","out":"_データ列_.dt.day"}
+{"in":"整数未満までの行列を作りたい","out":"np.arange(_整数_)"}
+{"in":"文字列をバイト列にしたい","out":"bytes(_文字列_)"}
+{"in":"カウンタを作りたい","out":"collections.Counter()"}
+{"in":"２つの辞書を階層的につなぎたい","out":"collections.ChainMap(_辞書_, _辞書_)"}
+{"in":"二つの配列を列方向に連結したい","out":"np.concatenate([_配列_, _配列_], axis=0)"}
+{"in":"空白が文字列のある位置以降に含まれるか調べたい","out":"_文字列_.find(\" \", 開始位置) != -1"}
+{"in":"辞書のエントリの一覧を使用したい","out":"list(_辞書_.values())"}
+{"in":"タブで文字列を区切って列挙したい","out":"_文字列_.split(\"\\t\")"}
+{"in":"ネームドタプルをデータからインスタンス化したい","out":"名前付きタプルのクラス名._make(パラメータ)"}
+{"in":"リストの値が列名に含まれない行データを取り出したい","out":"_データフレーム_[~_データフレーム_[_列名_].isin(_リスト_)]"}
+{"in":"要約統計量を計算したい","out":"_何の_"}
+{"in":"既存のベクトルを元にして全要素が初期値の行列","out":"np.full_like(_配列_, 初期値)"}
+{"in":"横棒グラフをシアンにしたい","out":"plt.bar(_データ列_, _データ列_, color='cyan')"}
+{"in":"横棒グラフを翡翠にしたい","out":"plt.bar(_データ列_, _データ列_, color=\"#3f9877\")"}
+{"in":"青色で縦棒グラフを描画したい","out":"plt.bar(_データ列_, _データ列_, color=\"blue\")"}
+{"in":"タプルを結合したい","out":"_タプル_ + _タプル_"}
+{"in":"横棒グラフをチャコールグレー色にしたい","out":"plt.bar(_データ列_, _データ列_, color=\"#4c444d\")"}
+{"in":"文字列を最後の空白で二つに区切ってて前半を見る","out":"_文字列_.rpartition(\" \")[0]"}
+{"in":"横棒グラフを茄子紺色にしたい","out":"plt.bar(_データ列_, _データ列_, color=#451F49)"}
+{"in":"数列の平均を計算したい","out":"sum(数列)\/len(数列)"}
+{"in":"横棒グラフをチョコレート色にしたい","out":"plt.bar(_データ列_, _データ列_, color='chocolate')"}
+{"in":"縦方向の破線をグラフに加えたい","out":"plt.axvline(x=0, linestyle=\"dashed\")"}
+{"in":"イテレータの長さ整数の重複コンビネーションをループしたい","out":"for pairs in itertools.combinations_with_replacement(_イテレータ_, _整数_):\n    print(pairs)"}
+{"in":"足し算したい","out":"_数値_ + _数値2_"}
+{"in":"データフレームからtypeListであるデータ型のカラムのみ除外したい","out":"_データフレーム_.select_dtypes(exclude=[_型名_])"}
+{"in":"凡例を加えたい","out":"plt.legend(['(凡例A)', '(凡例B)'])"}
+{"in":"リストをナンバリングしたい","out":"enumerate(_リスト_)"}
+{"in":"文字列の両端からタブを除去したい","out":"_文字列_.strip(\"\\t\")"}
+{"in":"<option>マーカーの色は深緑","out":"markerfacecolor = \"#004025\""}
+{"in":"文字列が列名の接尾辞でない行データを取り出したい","out":"_データフレーム_[~_データフレーム_[_列名_].str.endswith(_文字列_)]"}
+{"in":"縦軸の目盛の表示を変更したい","out":"plt.yticks(目盛りの値リスト)"}
+{"in":"<option>色は苺色","out":"color = \"#bb5561\""}
+{"in":"横棒グラフの色をrgbに設定したい","out":"plt.barh(ラベル列, データ列, color=rgb)"}
+{"in":"文字列を最初の文字列で二つに分けたい","out":"_文字列_.partition(_文字列_)"}
+{"in":"<option>白色を用いたい","out":"color = 'white'"}
+{"in":"列名が正規分布か判定したい仮説検定したい","out":"scipy.stats.kstest(_データフレーム_[_列名_], 'norm')"}
+{"in":"整数を表示したい","out":"print(_整数_)"}
+{"in":"結果のメモリ消費量を確認したい","out":"sys.getsizeof(_結果_)"}
+{"in":"縦棒グラフを水色にしたい","out":"plt.bar(_データ列_, _データ列_, color='aqua')"}
+{"in":"データフレームの列名を目的変数にしたい","out":"目的変数 = _データフレーム_[_列名_]"}
+{"in":"縦棒グラフをベージュ色にしたい","out":"plt.bar(_データ列_, _データ列_, color='beige')"}
+{"in":"リストのn番目のの値を確認したい","out":"_リスト_[n_]"}
+{"in":"整数がリストまたはタプルの一つであるか調べたい","out":"_整数_ in _リストまたはタプル_"}
+{"in":"<option>マーカーの色はマゼンタ","out":"markerfacecolor = 'magenta'"}
+{"in":"文字が文字列またはリストに含まれないか判定したい","out":"_文字_ not in _文字列またはリスト_"}
+{"in":"文字列をインターンしたい","out":"sys.intern(文字列)"}
+{"in":"最後の値を辞書からポップしたい","out":"_辞書_.popitem()"}
+{"in":"ファイル拡張子ファイル名がか調べたい","out":"_ファイル名_.startswith(_ファイル拡張子_)"}
+{"in":"データ列が何時か調べたい","out":"_データ列_.dt.hour"}
+{"in":"辞書のキーを整数にしたい","out":"_辞書_[_キー_] = _整数_"}
+{"in":"文字列中にひとつでもアスキー文字が含まれるか判定したい","out":"any(c.isascii() for c in _文字列_)"}
+{"in":"xdataとydataについて散布図を描画してマーカーをYに指定したい","out":"plt.plot(_データ列_, _データ列_, marker=_X_)"}
+{"in":"文字列が全て英文字か確認したい","out":"_文字列_.isalpha()"}
+{"in":"少ない順番にカウンタを列挙したい","out":"_カウンタ_.most_common()[::-1]"}
+{"in":"タブが文字列のある位置先に含まれるか判定したい","out":"_文字列_.find(\"\\t\", 開始位置) != -1"}
+{"in":"結果は整数か計算したい","out":"isinstance(_結果_, int)"}
+{"in":"サイコロと同じ乱数を生成したい","out":"random.randint(1, 6)"}
+{"in":"データフレームのカラムを円グラフにしたい","out":"plt.pie(df['_列名_'], startangle=90)"}
+{"in":"クラス分類をMLPでしたい","out":"model = sklearn.neural_network.MLPClassifier(hidden_layer_sizes=(10, 10))\nmodel.fit(説明変数, 目的変数)"}
+{"in":"文字列は十進数字か調べたい","out":"_文字列_.isdecimal()"}
+{"in":"文字列から文字列を消したい","out":"_文字列_.replace(_文字列_, '')"}
+{"in":"散布図を描きたい。凡例を付けたい","out":"plt.scatter(_データ列_, _データ列_, label='(説明)')"}
+{"in":"の行データを条件で抽出したい","out":"_データフレーム_[(_データフレーム_[_列名_] == _値_) & (_データフレーム_[_列名_] == _値2_)]"}
+{"in":"線を赤い点線で描画したい","out":"plt.plot(_データ列_, _データ列_, linestyle=\"dotted\", color=\"r\")"}
+{"in":"分数の分子を使いたい","out":"_有理数_.numerator"}
+{"in":"文字列は辞書の値に含まれていないか判定したい","out":"_文字列_ not in _辞書_.values()"}
+{"in":"終了位置を指定して文字の位置を探したい","out":"_文字列_.find(_文字_, 0, 終了位置)  # 見つからない場合は-1"}
+{"in":"mからm2までの整数リストが一つ置きで欲しい","out":"list(range(m_, m_+1, 2))"}
+{"in":"JSON形式で結果をファイル名に出力したい","out":"with open(ファイル名, 'w') as f:\n    json.dump(_結果_, f, ensure_ascii=False)"}
+{"in":"辞書の項目名とその値をリストに変換したい","out":"_辞書_.items()"}
+{"in":"変数を増加させたい","out":"変数 += _整数_"}
+{"in":"データフレームをあるカラムの値でグループ化してグループ毎の件数を知る","out":"_データフレーム_.groupby(_列名_).size()"}
+{"in":"データフレームから型名の列名の一覧を用いたい","out":"_データフレーム_.select_dtypes(_型名_).columns"}
+{"in":"結果を赤色で表示できる文字列に変換したい","out":"f'\\033[31m{_結果_}\\033[0m'"}
+{"in":"整数を八進数表記にしたい","out":"oct(_整数_)"}
+{"in":"数値ののハイパボリック・サインが計算したい","out":"math.sinh(_数値_)  # 単位はラジアン"}
+{"in":"変数をデバッグ向けの文字列にしたい","out":"repr(_変数_)"}
+{"in":"データフレームを各column毎にグループ化してsというグループの個数を算出したい","out":"_データフレーム_.groupby(_列名_).size()[s]"}
+{"in":"黄色い一点鎖線で配列の推移を描画したい","out":"plt.plot(_データ列_, _データ列_, linestyle=\"dashbot\", color=\"y\")"}
+{"in":"黒いYマーカーをxdataとydataについての散布図に描きたい","out":"plt.plot(_データ列_, _データ列_, marker=_X_, c='k')"}
+{"in":"結果のハイパボリック・タンジェントの逆数がほしい","out":"math.atanh(_結果_)"}
+{"in":"リストの最後のm要素を除きたい","out":"_リスト_[:-m_]"}
+{"in":"列名と列名2の基本統計量を求めたい","out":"_データフレーム_[[_列名_, _列名_]].describe()"}
+{"in":"辞書に項目名が存在しないとき","out":"if _キー_ not in _辞書_:\n    print(_辞書_[_キー_])  # 具体的に"}
+{"in":"辞書順で文字列が文字列より小さいか調べたい","out":"_文字列_ < _文字列_"}
+{"in":"列名の尖度を求めたい","out":"scipy.stats.kurtosis(_データフレーム_[_列名_], bias=False)"}
+{"in":"リストの長さ整数の組み合わせがみたい","out":"itertools.combinations(_リスト_, _整数_)"}
+{"in":"シアン色で線グラフを描画したい","out":"plt.plot(_データ列_, _データ列_, color=\"cyan\")"}
+{"in":"配列の基本統計量を求めたい","out":"pd.Series(_配列_).describe()"}
+{"in":"結果のtanを求めたい","out":"math.tan(_結果_)  # 単位はラジアン"}
+{"in":"列名の歪み","out":"scipy.stats.skew(_データフレーム_[_列名_], bias=False)"}
+{"in":"整数進対数が計算したい","out":"math.log(_数値_, _整数_)"}
+{"in":"改行を文字列の接頭辞から安全に除去したい","out":"_文字列_.removeprefix(\"\\n\")"}
+{"in":"リストをm倍したい","out":"_リスト_ * m_"}
+{"in":"文字列の開始位置からと終了位置までの範囲にタブが含まれないか計算したい","out":"_文字列_.find(\"\\t\", 開始位置, 終了位置) == -1"}
+{"in":"文字を範囲を指定して探したい","out":"_文字列_.find(_文字_, 開始位置, 終了位置)  # 見つからない場合は-1"}
+{"in":"データフレームのカラム間の相関行列を算出したい","out":"_データフレーム_.corr()"}
+{"in":"データフレームの母標準偏差を計算したい","out":"_データフレーム_.std(ddof=0)"}
+{"in":"タプルからカウンタを作りたい","out":"FIXME collections.Counter(_タプル_)"}
+{"in":"クラス分類をランダムフォレストで行いたい","out":"model = sklearn.ensemble.RandomForestClassifier()\nmodel.fit(説明変数, 目的変数)"}
+{"in":"横棒グラフを黒色で描画する","out":"plt.barh(_データ列_, _データ列_, color=\"black\")"}
+{"in":"リストのn番目以降の部分を得る","out":"_リスト_[n_:]"}
+{"in":"複数の結果を順に表示したい","out":"print(_結果_, _結果_, _結果_)"}
+{"in":"ベクトルの標準偏差を知りたい","out":"np.std(_配列_)"}
+{"in":"整数は辞書の値として含まれているか調べたい","out":"_整数_ in _辞書_.values()"}
+{"in":"文字列中にひとつでも非数字が含まれるか算出したい","out":"any(not c.isdigit() for c in _文字列_)"}
+{"in":"マゼンタ色の棒グラフを描画したい","out":"plt.bar(_データ列_, _データ列_, color=\"magenta\")"}
+{"in":"文字列の左端が文字列か調べたい","out":"_文字列_.startswith(_文字列_)"}
+{"in":"整数のモジュロを求めたい","out":"_数値_ % _数値2_"}
+{"in":"ソートして辞書をJSON形式にエンコードしたい","out":"json.dumps(_辞書_, ensure_ascii=False, sort_keys=True)"}
+{"in":"コマンドtextを実行する","out":"text = \"echo 'A'\"\nos.system(text)"}
+{"in":"常用対数がほしい","out":"math.log10(_数値_)"}
+{"in":"長さが一致しないときのzip","out":"itertools.zip_longest(_イテレータ_, _イテレータ_)"}
+{"in":"クラス名はクラス名2のサブクラスか算出したい","out":"issubclass(_クラス名_, _クラス名2_)"}
+{"in":"正弦からラジアンがほしい","out":"math.asin(_結果_)"}
+{"in":"下線付きにしたい","out":"f'\\033[2m{_文字列_}\\033[0m'"}
+{"in":"osモジュールをインポートする","out":"import os"}
+{"in":"ラジアンの角度がほしい","out":"math.degrees(_結果_)  # 単位はラジアン"}
+{"in":"Pandasのバージョンをプリントしておきたい","out":"print(pd._version_)"}
+{"in":"データフレームが正規分布からどの程度尖っているか確認したい","out":"_データフレーム_.skew()"}
+{"in":"f全体を行分割して読み込む","out":"f.readlines()"}
+{"in":"列名が正規表現にマッチしない行データを取り出したい","out":"_データフレーム_[~_データフレーム_[_列名_].str.match(正規表現)]"}
+{"in":"データフレームの列の推移を線にしたい","out":"plt.plot(range(len(df['_列名_'])), df['_列名_'])"}
+{"in":"文字列が文字で終わるか確認したい","out":"_文字列_.endswith(_文字_)"}
+{"in":"列名が文字列で始まらない行データを取り出したい","out":"_データフレーム_[~_データフレーム_[_列名_].str.startswith(_文字列_)]"}
+{"in":"<option>色は水","out":"color = 'aqua'"}
+{"in":"デックの要素をインプレースに反転したい","out":"_両端キュー_.reverse()"}
+{"in":"変数を整数分の1にしたい","out":"変数 \/= _整数_"}
+{"in":"行列の分散を知りたい","out":"np.var(_配列_)"}
+{"in":"カウンタの全カウントを得たい","out":"_カウンタ_.total()"}
+{"in":"横棒グラフを真紅にしたい","out":"plt.bar(_データ列_, _データ列_, color='crimson')"}
+{"in":"<option>群青色を使用したい","out":"color = \"#465daa\""}
+{"in":"最後の空白で文字列を二分したい","out":"_文字列_.rpartition(\" \")"}
+{"in":"線グラフでデータ列を描画したい。線の種類は補助線にしたい","out":"plt.plot(_データ列_, _データ列_, linestyle=\"dashed\")"}
+{"in":"整数行目から整数行目までデータフレームを新しく表にしたい","out":"_データフレーム_[_整数_:_整数_]"}
+{"in":"配列を並べてボックスチャートにしたい","out":"plt.boxplot([_配列_, _配列_], labels=['(解説)', '(解説2)'])"}
+{"in":"外れ値を除いた配列の分散を算出したい","out":"scipy.stats.tvar(_配列_, limits=(_下限値_, _上限値_), inclusive=(True, True))"}
+{"in":"データフレームを列名で全ジョインしたい","out":"pd.merge(_データフレーム_, _データフレーム_, on=_列名_, how='outer')"}
+{"in":"文字列の後ろからタブを探したい","out":"_文字列_.rfind(\"\\t\")  # 見つからない場合は-1"}
+{"in":"文字列を分数にしたい","out":"fractions.Fraction(_文字列_)"}
+{"in":"文字列中に漢字が使われているか計算したい","out":"re.search('[\\u4E00-\\u9FD0]', _文字列_)"}
+{"in":"整数が実数よりも大きいか判定したい","out":"_整数_ > _実数_"}
+{"in":"整数＋実数を求めたい","out":"_整数_ + _実数_"}
+{"in":"整数の符号をコピーにしたい","out":"math.copysign(_整数_, _整数_)"}
+{"in":"縦棒グラフを紫にしたい","out":"plt.bar(_データ列_, _データ列_, color='purple')"}
+{"in":"３２ビット整数型の全要素を０で初期化した行列を初期化したい","out":"np.zeros(行数, 列数, dtype=np.int32)"}
+{"in":"n個の結果があるリストを算出したい","out":"[_結果_] * n_"}
+{"in":"オブジェクトのオブジェクト識別子を使用したい","out":"id(オブジェクト)"}
+{"in":"乱数を使用したい。乱数は整数最大値最小値は整数から整数2の間","out":"random.randint(_整数_, _整数2_)"}
+{"in":"黒い実線で線を描画したい","out":"plt.plot(_データ列_, _データ列_, linestyle=\"solid\", color=\"k\")"}
+{"in":"<option>青紫色を使いたい","out":"color = 'blueviolet'"}
+{"in":"空白が用いたい","out":"\" \""}
+{"in":"変数を切り捨てながら半分にしたい","out":"変数 \/\/= 2"}
+{"in":"リストの調和平均を計算したい","out":"scipy.stats.hmean(_リスト_)"}
+{"in":"カンマを後方から範囲を指定して探したい","out":"_文字列_.find(\",\", 開始位置, 終了位置)  # 見つからない場合は-1"}
+{"in":"文字列中の改行の出現回数を範囲を指定して数えたい","out":"_文字列_.count(\"\\n\", 開始位置, 終了位置)"}
+{"in":"ラインに凡例を付けたい","out":"plt.plot(_データ列_, _データ列_, label='(説明)')"}
+{"in":"<option>マーカーの色は苺色","out":"markerfacecolor = \"#bb5561\""}
+{"in":"縦にデータフレームとデータフレームとデータフレームを一つにしたい","out":"pd.concat([_データフレーム_, _データフレーム_, _データフレーム_3], axis=1)"}
+{"in":"両端キューに文字列を積む","out":"_両端キュー_.append(_文字列_)"}
+{"in":"文字列の右側を調べたい","out":"_文字列_[-1]"}
+{"in":"タプルの最後の値が知りたい","out":"_タプル_[-1]"}
+{"in":"整数の絶対値が計算したい","out":"math.fabs(_整数_)"}
+{"in":"イテラブルの変化を黄色い点線で書きたい","out":"plt.plot(_データ列_, _データ列_, linestyle=\"dotted\", color=\"y\")"}
+{"in":"列名でデータフレームとデータフレームを内部結合したい","out":"pd.merge(_データフレーム_, _データフレーム_, on=_列名_, how='inner')"}
+{"in":"横軸にラベルを付けたい","out":"plt.xlabel('(x軸ラベル)')"}
+{"in":"データフレームの表示できる行数を設置したい","out":"pd.set_option('display.max_rows', n)"}
+{"in":"辞書に項目名が存在するとき","out":"if _キー_ in _辞書_:\n    print(_辞書_[_キー_])  # 具体的に"}
+{"in":"文字列が文字列の開始位置以降に含まれるか判定したい","out":"_文字列_.find(_文字列_, 開始位置) != -1"}
+{"in":"空白が文字列の開始位置からと終了位置までの間に含まれないか算出したい","out":"_文字列_.find(\" \", 開始位置, 終了位置) == -1"}
+{"in":"整数は実数と等しいか調べたい","out":"_整数_ == _実数_"}
+{"in":"データフレームの平均が算出したい","out":"_データフレーム_.mean()"}
+{"in":"重複していない行だけ新しいデータフレームにしたい","out":"_データフレーム_[~ _データフレーム_.duplicated(keep=False)]"}
+{"in":"<option>マーカーの色は紫","out":"markerfacecolor = 'purple'"}
+{"in":"整数が整数未満もしくはn3以上か計算したい","out":"_整数_ < _整数_ or _整数_ >= n3"}
+{"in":"FIXME","out":"np.linalg.eig(_配列_)"}
+{"in":"データフレームのcolumnsで指定したカラムを取り除きたい","out":"_データフレーム_.drop(columns, axis=1, inplace=True)"}
+{"in":"<option>栗色を用いたい","out":"color = 'maroon'"}
+{"in":"縦方向の点線をグラフに付けたい","out":"plt.axvline(x=0, linestyle=\"dotted\")"}
+{"in":"列名のUNIX時間をdatetime64型に変換したい","out":"pd.to_datetime(_データフレーム_[_列名_], unit='s', utc=True)"}
+{"in":"列名はどの程度正規分布から尖っているか知りたい","out":"_データフレーム_[_列名_].skew()"}
+{"in":"タブを文字列の先頭からエラーなく除きたい","out":"_文字列_.removeprefix(\"\\t\")"}
+{"in":"整数を底としたい結果の対数を求めたい","out":"math.log(_結果_, _整数_)"}
+{"in":"線グラフの色をマゼンタに設定したい","out":"plt.plot(_データ列_, _データ列_, color=\"magenta\")"}
+{"in":"文字列中にアスキー文字が含まれないか確認したい","out":"any(not c.isascii() for c in _文字列_)"}
+{"in":"nまでの偶数列を用いたい","out":"list(range(0, n_, 2))"}
+{"in":"L2ノルムで正規化がしたい","out":"sklearn.preprocessing.Normalizer(norm=\"l2\").fit_transform(データ列)"}
+{"in":"結果を下線付きにしたい","out":"f'\\033[2m{_結果_}\\033[0m'"}
+{"in":"<option>マーカーは青紫色","out":"markerfacecolor = \"#6f51a1\""}
+{"in":"文字列のサフィックスから安全に空白を消したい","out":"_文字列_.removesuffix(\" \")"}
+{"in":"配列の長さ整数の順列が知りたい","out":"itertools.permutations(_配列_, _整数_)"}
+{"in":"データフレームを列名で右ジョインしたい","out":"pd.merge(_データフレーム_, _データフレーム_, on=_列名_, how='right')"}
+{"in":"データフレームのカラムを並べて箱ひげ図にしたい","out":"plt.boxplot([df['_列名_'], df['_列名_']], labels=['(解説)', '(解説2)'])"}
+{"in":"変数を整数だけ減少させたい","out":"変数 -= _整数_"}
